@@ -1,0 +1,34 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs & temp
+logs/
+*.log
+tmp/
+temp/
+cache/
+*.cache
+
+# Dependencies (if used)
+vendor/
+composer.lock
+node_modules/
+npm-debug.log*
+yarn.lock
+.pnpm-store/
+
+# Env & private
+.env
+.env.*
+.env.local
+private/
+
+# Uploads (uncomment if this exists and is user-generated)
+# uploads/
+
+# Misc
+*.swp
+*.swo
