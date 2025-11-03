@@ -23,16 +23,13 @@ if (!defined('APP_ENV')) {
 if (APP_ENV === 'production') {
   echo '
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLWLLDYFP9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag("js", new Date());
-    gtag("config", "G-XXXXXXXXXX", {
-      page_title: document.title,
-      page_location: window.location.href,
-      send_page_view: true
-    });
+
+    gtag("config", "G-QLWLLDYFP9");
   </script>';
 }
 
@@ -42,7 +39,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME'], '.php');
 
 // Add Google Search Console verification meta tag in production
 if (APP_ENV === 'production') {
-  echo '<meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />';
+  echo '<meta name="google-site-verification" content="REPLACE-WITH-YOUR-VERIFICATION-CODE" />';
 }
 ?>
 
