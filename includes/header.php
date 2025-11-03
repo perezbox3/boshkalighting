@@ -39,7 +39,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME'], '.php');
 
 // Add Google Search Console verification meta tag in production
 if (APP_ENV === 'production') {
-  echo '<meta name="google-site-verification" content="REPLACE-WITH-YOUR-VERIFICATION-CODE" />';
+  echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1aneqqhGvmDp27XqK4" />';
 }
 ?>
 
