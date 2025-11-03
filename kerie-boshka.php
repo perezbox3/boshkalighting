@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Kerie Boshka | Owner & Lighting Designer | Boshka Lighting</title>
-  <meta name="description" content="Meet Kerie Boshka, Owner & Lighting Designer at Boshka Lighting. Third-generation lighting designer carrying on a 60+ year family legacy." />
+  <title>Kerie Boshka | Owner & Lighting Designer | Third-Generation Expert | Boshka Lighting</title>
+  <meta name="description" content="Meet Kerie Boshka, Owner & Third-Generation Lighting Designer at Boshka Lighting Weatherford TX. 60+ years family legacy, lighting design expert, published author." />
+  <meta name="keywords" content="Kerie Boshka, lighting designer Weatherford TX, third generation lighting expert, Boshka Lighting owner, published author lighting, small space design expert" />
+  <meta name="author" content="Boshka Lighting" />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://boshkalighting.com/kerie-boshka" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Meet Kerie Boshka | Owner & Lighting Designer | Boshka Lighting" />
-  <meta property="og:description" content="Meet Kerie Boshka, third-generation lighting designer and owner of Boshka Lighting, continuing a family legacy of lighting excellence." />
-  <meta property="og:image" content="https://boshkalighting.com/images/bing.jpg" />
+  <meta property="og:title" content="Kerie Boshka | Owner & Lighting Designer | Third-Generation Expert" />
+  <meta property="og:description" content="Meet Kerie Boshka, third-generation lighting designer and owner of Boshka Lighting, continuing a 60+ year family legacy of lighting excellence." />
+  <meta property="og:image" content="https://boshkalighting.com/images/kerie-boshka.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="600" />
   <meta property="og:url" content="https://boshkalighting.com/kerie-boshka" />
   <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Boshka Lighting" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kerie Boshka | Owner & Lighting Designer | Third-Generation Expert" />
+  <meta name="twitter:description" content="Meet Kerie Boshka, third-generation lighting designer and owner of Boshka Lighting." />
+  <meta name="twitter:image" content="https://boshkalighting.com/images/kerie-boshka.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -23,6 +35,84 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Person Schema for Kerie Boshka -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kerie Boshka",
+    "jobTitle": "Owner & Lighting Designer",
+    "description": "Third-generation lighting designer and owner of Boshka Lighting. Expert in residential lighting design, small-space design, and lighting layouts.",
+    "image": "https://boshkalighting.com/images/kerie-boshka.jpg",
+    "url": "https://boshkalighting.com/kerie-boshka",
+    "sameAs": [
+      "https://boshkalighting.com/about"
+    ],
+    "worksFor": {
+      "@type": "LocalBusiness",
+      "@id": "https://boshkalighting.com/#organization",
+      "name": "Boshka Lighting",
+      "url": "https://boshkalighting.com"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Aledo High School",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Aledo",
+        "addressRegion": "TX"
+      }
+    },
+    "knowsAbout": [
+      "Lighting Design",
+      "Small Space Design",
+      "Residential Lighting",
+      "Lighting Layouts",
+      "Custom Lighting Solutions",
+      "Interior Design"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Lighting Designer",
+      "occupationalCategory": "Design Professionals",
+      "responsibilities": "Custom lighting design, client consultation, lighting layout planning, fixture selection"
+    },
+    "author": [
+      {
+        "@type": "Book",
+        "name": "If God Cares So Much, Why Do I Still Hurt?",
+        "author": "Kerie Boshka"
+      },
+      {
+        "@type": "Book",
+        "name": "Toad, Frog, Mouse, and Monkey Boy: Magic and Mayhem",
+        "author": "Kerie Boshka",
+        "audience": "Children"
+      }
+    ],
+    "founder": [
+      {
+        "@type": "Organization",
+        "name": "Fantastic Life Choices",
+        "description": "Program that helps kids make positive choices by helping others"
+      },
+      {
+        "@type": "Organization",
+        "name": "BuildHERS - Building Up Women Who Build",
+        "description": "Organization empowering women across the construction and design industries"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Weatherford",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "nationality": "American",
+    "gender": "Female"
+  }
+  </script>
 
   <style>
     :root {

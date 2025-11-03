@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Boshka Lighting</title>
-  <meta name="description" content="Get in touch with Boshka Lighting. Find our address, phone number, business hours, and location map. Let’s illuminate your next project." />
+    <title>Contact Boshka Lighting | (817) 757-7092 | Weatherford TX Lighting Experts</title>
+  <meta name="description" content="Contact Boshka Lighting in Weatherford, TX. Call (817) 757-7092 for lighting design, electrical services. Visit our showroom at 3825 Quanah Hill Rd Unit 11." />
+  <meta name="keywords" content="contact Boshka Lighting, Weatherford lighting contractor, (817) 757-7092, lighting showroom Weatherford, electrical services contact, lighting consultation" />
+  <meta name="author" content="Boshka Lighting" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="TX" />
+  <meta name="geo.placename" content="Weatherford" />
+  <meta name="geo.position" content="32.7576719;-97.8072675" />
+  <meta name="ICBM" content="32.7576719, -97.8072675" />
   <link rel="canonical" href="https://boshkalighting.com/contact" />
 
   <!-- Open Graph -->

@@ -19,9 +19,31 @@ if (!defined('APP_ENV')) {
   }
 }
 
+// Google Analytics - only load in production
+if (APP_ENV === 'production') {
+  echo '
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXXXXX", {
+      page_title: document.title,
+      page_location: window.location.href,
+      send_page_view: true
+    });
+  </script>';
+}
+
 $isHomePage = basename($_SERVER['SCRIPT_NAME']) === 'index.php';
 $baseUrl = defined('BASE_URL') ? rtrim((string) constant('BASE_URL'), '/') : '';
 $currentPage = basename($_SERVER['SCRIPT_NAME'], '.php');
+
+// Add Google Search Console verification meta tag in production
+if (APP_ENV === 'production') {
+  echo '<meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />';
+}
 ?>
 
 <style>

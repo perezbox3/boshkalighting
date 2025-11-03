@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://boshkalighting.com/</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/logo.png</image:loc>
+      <image:title>Boshka Lighting Logo</image:title>
+      <image:caption>Expert lighting design and electrical services in Weatherford, TX</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://boshkalighting.com/about.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/bing.jpg</image:loc>
+      <image:title>Boshka Lighting Showroom</image:title>
+      <image:caption>Boshka Lighting showroom exterior in Weatherford, Texas</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://boshkalighting.com/contact.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Schedule Page -->
+  <url>
+    <loc>https://boshkalighting.com/schedule.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Team Member Pages -->
+  <url>
+    <loc>https://boshkalighting.com/kerie-boshka.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/kerie-boshka.jpg</image:loc>
+      <image:title>Kerie Boshka - Owner & Lighting Designer</image:title>
+      <image:caption>Kerie Boshka, third-generation lighting designer and owner of Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://boshkalighting.com/rick-boshka.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/rick-boshka.jpg</image:loc>
+      <image:title>Rick Boshka - Owner & Master Electrician</image:title>
+      <image:caption>Rick Boshka, Master Electrician and owner of Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://boshkalighting.com/taylor-drew.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/taylor-drew.jpeg</image:loc>
+      <image:title>Taylor Drew - Lighting & Design Consultant</image:title>
+      <image:caption>Taylor Drew, Lighting and Design Consultant at Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://boshkalighting.com/ashtyn-boshka.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/ashtyn-boshka.jpeg</image:loc>
+      <image:title>Ashtyn Boshka - Administrative Assistant</image:title>
+      <image:caption>Ashtyn Boshka, Administrative Assistant at Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://boshkalighting.com/noah-center.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/noah-center.jpeg</image:loc>
+      <image:title>Noah Center - Industrial Electrician</image:title>
+      <image:caption>Noah Center, Industrial Electrician at Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://boshkalighting.com/avery-wollert.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/avery-wollert.jpeg</image:loc>
+      <image:title>Avery Wollert - Residential Electrician</image:title>
+      <image:caption>Avery Wollert, Residential Electrician at Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://boshkalighting.com/shahara-fowler.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://boshkalighting.com/images/shahara-fowler.jpg</image:loc>
+      <image:title>Shahara Fowler - Service Electrician</image:title>
+      <image:caption>Shahara Fowler, Service Electrician at Boshka Lighting</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Partnership Page -->
+  <url>
+    <loc>https://boshkalighting.com/mg-brick-stone.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Employee Owner Page -->
+  <url>
+    <loc>https://boshkalighting.com/employee-owner.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

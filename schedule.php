@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Business Hours | Boshka Lighting</title>
-  <meta name="description" content="View the official business hours of Boshka Lighting. We're open weekdays and available on Saturdays by appointment for all your lighting and electrical needs." />
+  <title>Business Hours | Boshka Lighting Weatherford TX | Mon-Fri 9am-5pm</title>
+  <meta name="description" content="Boshka Lighting business hours: Mon-Thu 9am-5pm, Fri 9am-2pm. Saturday by appointment. Call (817) 757-7092. Visit our Weatherford TX showroom." />
+  <meta name="keywords" content="Boshka Lighting hours, Weatherford lighting showroom hours, business hours, lighting consultation appointment, electrical services schedule" />
+  <meta name="author" content="Boshka Lighting" />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://boshkalighting.com/schedule" />
 
   <!-- Open Graph -->
@@ -21,6 +24,70 @@
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Business Hours Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://boshkalighting.com/#organization",
+    "name": "Boshka Lighting",
+    "url": "https://boshkalighting.com",
+    "telephone": "+18177577092",
+    "email": "boshkalighting@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3825 Quanah Hill Rd Unit 11",
+      "addressLocality": "Weatherford",
+      "addressRegion": "TX",
+      "postalCode": "76087",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Tuesday",
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Wednesday",
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ],
+    "specialOpeningHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "00:00",
+        "closes": "23:59",
+        "validFrom": "2024-01-01",
+        "validThrough": "2025-12-31",
+        "description": "By appointment only"
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root {

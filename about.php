@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Boshka Lighting</title>
-  <meta name="description" content="Learn about Boshka Lighting’s mission, team, and design philosophy. We blend elegance with function to illuminate your space with purpose." />
+  <title>About Boshka Lighting | 60+ Years Family-Owned Lighting Experts Weatherford TX</title>
+  <meta name="description" content="Family-owned lighting business serving Weatherford TX for 60+ years. Third-generation experts in lighting design, electrical services. Meet our experienced team." />
+  <meta name="keywords" content="about Boshka Lighting, family lighting business, Weatherford lighting experts, third generation lighting, electrical contractors Texas, lighting design team" />
+  <meta name="author" content="Boshka Lighting" />
+  <meta name="robots" content="index, follow" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://boshkalighting.com/about" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="About Us | Boshka Lighting" />
-  <meta property="og:description" content="Discover the creative minds behind Boshka Lighting. Meet the team and explore how we deliver lighting solutions with design excellence." />
+  <meta property="og:title" content="About Boshka Lighting | 60+ Years Family-Owned Lighting Experts" />
+  <meta property="og:description" content="Family-owned lighting business serving Weatherford TX for 60+ years. Third-generation experts in lighting design, electrical services." />
   <meta property="og:image" content="https://boshkalighting.com/images/logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://boshkalighting.com/about" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Boshka Lighting" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Boshka Lighting | 60+ Years Family-Owned Lighting Experts" />
+  <meta name="twitter:description" content="Family-owned lighting business serving Weatherford TX for 60+ years. Third-generation experts in lighting design, electrical services." />
+  <meta name="twitter:image" content="https://boshkalighting.com/images/logo.png" />
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -23,25 +35,153 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Structured Data -->
+  <!-- About Page Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Boshka Lighting",
-    "image": "https://boshkalighting.com/images/logo.png",
-    "url": "https://boshkalighting.com",
-    "telephone": "+1-817-550-7130",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "3825 Quanah Hill Rd Unit 11",
-      "addressLocality": "Weatherford",
-      "addressRegion": "TX",
-      "postalCode": "76087",
-      "addressCountry": "US"
-    },
-    "description": "Boshka Lighting blends artistic design with technical expertise to deliver exceptional lighting and electrical solutions.",
-    "priceRange": "$$"
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "@id": "https://boshkalighting.com/#organization",
+      "name": "Boshka Lighting",
+      "alternateName": "Boshka Lighting & Electric",
+      "image": "https://boshkalighting.com/images/logo.png",
+      "url": "https://boshkalighting.com",
+      "telephone": "+18177577092",
+      "email": "boshkalighting@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3825 Quanah Hill Rd Unit 11",
+        "addressLocality": "Weatherford",
+        "addressRegion": "TX",
+        "postalCode": "76087",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "32.7576719",
+        "longitude": "-97.8072675"
+      },
+      "description": "Third-generation family lighting business with 60+ years of experience. Expert lighting design and electrical services serving Weatherford, TX and the DFW area.",
+      "priceRange": "$$",
+      "foundingDate": "1960",
+      "slogan": "Illuminating Excellence",
+      "numberOfEmployees": "7",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Weatherford",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Texas"
+          }
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Dallas-Fort Worth Metroplex"
+        }
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Kerie Boshka",
+          "jobTitle": "Owner & Lighting Designer",
+          "description": "Third-generation lighting designer with expertise in residential and commercial lighting design"
+        },
+        {
+          "@type": "Person",
+          "name": "Rick Boshka",
+          "jobTitle": "Owner & Master Electrician",
+          "description": "Master electrician with extensive experience in residential and commercial electrical services"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Lighting & Electrical Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Lighting Design",
+              "description": "Professional lighting design consultation and planning"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Installation",
+              "description": "Professional electrical installation and wiring services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lighting Installation",
+              "description": "Expert installation of lighting fixtures and systems"
+            }
+          }
+        ]
+      },
+      "knowsAbout": ["Lighting Design", "Electrical Installation", "Custom Lighting", "Residential Lighting", "Commercial Lighting", "Smart Lighting Systems"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "50"
+      }
+    }
+  }
+  </script>
+
+  <!-- Team Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Boshka Lighting Team Members",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Person",
+          "name": "Kerie Boshka",
+          "jobTitle": "Owner & Lighting Designer",
+          "url": "https://boshkalighting.com/kerie-boshka",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Person",
+          "name": "Rick Boshka",
+          "jobTitle": "Owner & Master Electrician",
+          "url": "https://boshkalighting.com/rick-boshka",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Person",
+          "name": "Taylor Drew",
+          "jobTitle": "Lighting & Design Consultant",
+          "url": "https://boshkalighting.com/taylor-drew",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      }
+    ]
   }
   </script>
 
@@ -352,7 +492,7 @@
   <section class="about-hero">
     <div class="hero-content">
       <h1 class="page-title">About Boshka Lighting</h1>
-      <img src="images/bing.jpg" alt="Studio Exterior" class="hero-image" />
+      <img src="images/bing.jpg" alt="Boshka Lighting showroom exterior in Weatherford, Texas showcasing professional lighting design services" class="hero-image" />
     </div>
   </section>
 
@@ -389,43 +529,43 @@
 
     <div class="team-grid">
       <div class="team-card">
-        <img src="images/kerie-boshka.jpg" alt="Portrait of Kerie Boshka">
+        <img src="images/kerie-boshka.jpg" alt="Kerie Boshka, Owner and Lighting Designer at Boshka Lighting, third-generation lighting expert">
         <h3>Kerie Boshka</h3>
         <p>Owner & Lighting Designer</p>
         <a href="/kerie-boshka.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/rick-boshka.jpg" alt="Portrait of Rick Boshka">
+        <img src="images/rick-boshka.jpg" alt="Rick Boshka, Owner and Master Electrician at Boshka Lighting, expert electrical contractor">
         <h3>Rick Boshka</h3>
         <p>Owner & Master Electrician</p>
         <a href="/rick-boshka.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/taylor-drew.jpeg" alt="Portrait of Taylor Drew">
+        <img src="images/taylor-drew.jpeg" alt="Taylor Drew, Lighting and Design Consultant at Boshka Lighting, lighting design specialist">
         <h3>Taylor Drew</h3>
         <p>Lighting & Design Consultant</p>
         <a href="/taylor-drew.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/ashtyn-boshka.jpeg" alt="Portrait of Ashtyn Boshka">
+        <img src="images/ashtyn-boshka.jpeg" alt="Ashtyn Boshka, Administrative Assistant at Boshka Lighting, customer service specialist">
         <h3>Ashtyn Boshka</h3>
         <p>Administrative Assistant</p>
         <a href="/ashtyn-boshka.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/noah-center.jpeg" alt="Portrait of Noah Center">
+        <img src="images/noah-center.jpeg" alt="Noah Center, Industrial Electrician at Boshka Lighting, commercial electrical expert">
         <h3>Noah Center</h3>
         <p>Industrial Electrician</p>
         <a href="/noah-center.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/avery-wollert.jpeg" alt="Portrait of Avery Wollert">
+        <img src="images/avery-wollert.jpeg" alt="Avery Wollert, Residential Electrician at Boshka Lighting, home electrical services specialist">
         <h3>Avery Wollert</h3>
         <p>Residential Electrician</p>
         <a href="/avery-wollert.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/shahara-fowler.jpg" alt="Portrait of Shahara Fowler">
+        <img src="images/shahara-fowler.jpg" alt="Shahara Fowler, Service Electrician at Boshka Lighting, electrical repair and maintenance expert">
         <h3>Shahara Fowler</h3>
         <p>Service Electrician</p>
         <a href="/shahara-fowler.php" class="team-link">Read Full Bio</a>

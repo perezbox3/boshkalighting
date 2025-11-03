@@ -1,0 +1,47 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://boshkalighting.com/sitemap.xml
+
+# Preferred crawl delay
+Crawl-delay: 1
+
+# Block access to admin/backend files (if any exist)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-content/uploads/
+Disallow: /*.log$
+
+# Allow all images
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Allow CSS and JS files
+Allow: /*.css$
+Allow: /*.js$
+
+# Block common unwanted files
+Disallow: *.php$
+Allow: /index.php
+Allow: /about.php
+Allow: /contact.php
+Allow: /schedule.php
+Allow: /*-boshka.php
+Allow: /*-drew.php
+Allow: /*-center.php
+Allow: /*-wollert.php
+Allow: /*-fowler.php
+Allow: /mg-brick-stone.php
+Allow: /employee-owner.php
+
+# Block temporary/test files
+Disallow: /test.php
+Disallow: /construction.php
+Disallow: /temp/
+Disallow: /backup/
