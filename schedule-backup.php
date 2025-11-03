@@ -145,17 +145,8 @@
     }
 
     .current-time {
-      position: sticky;
-      top: 80px;
-      z-index: 10;
       text-align: center;
       margin-bottom: 50px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: var(--shadow-lg);
-      border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     .time-display {
@@ -277,6 +268,132 @@
       color: var(--orange);
     }
 
+    .services-banner {
+      background: linear-gradient(135deg, var(--lighter-blue) 0%, white 100%);
+      padding: 60px 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .services-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--accent-blue);
+      margin-bottom: 16px;
+    }
+
+    .services-banner > p {
+      font-size: 1.2rem;
+      color: var(--gray-dark);
+      margin-bottom: 50px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .services-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      min-width: 200px;
+      border: 2px solid transparent;
+    }
+
+    .service-item:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-blue);
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .service-text h3 {
+      font-size: 1.3rem;
+      color: var(--accent-blue);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .service-text p {
+      color: var(--gray-dark);
+      font-size: 0.95rem;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .service-connector {
+      font-size: 2rem;
+      color: var(--accent-blue);
+      font-weight: bold;
+      margin: 0 10px;
+      opacity: 0.6;
+    }
+
+    .cta-section {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      border: 2px solid;
+    }
+
+    .cta-button.primary {
+      background: var(--accent-blue);
+      color: white;
+      border-color: var(--accent-blue);
+    }
+
+    .cta-button.primary:hover {
+      background: var(--light-blue);
+      border-color: var(--light-blue);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-button.secondary {
+      background: white;
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    .cta-button.secondary:hover {
+      background: var(--accent-blue);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
     .emergency-strip {
       background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
       padding: 20px;
@@ -344,13 +461,6 @@
         font-size: 1.1rem;
       }
 
-      .current-time {
-        position: relative;
-        top: 0;
-        padding: 20px;
-        margin-bottom: 30px;
-      }
-
       .time-display {
         font-size: 2.2rem;
       }
@@ -362,6 +472,31 @@
 
       .day-card {
         padding: 20px;
+      }
+
+      .services-flow {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .service-connector {
+        transform: rotate(90deg);
+        margin: 10px 0;
+      }
+
+      .service-item {
+        min-width: 100%;
+        padding: 25px 15px;
+      }
+
+      .cta-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-button {
+        width: 250px;
+        justify-content: center;
       }
 
       .emergency-content {
@@ -378,7 +513,7 @@
 <body class="schedule">
   <?php include 'includes/header.php'; ?>
 
-  <section class="schedule-hero">
+    <section class="schedule-hero">
     <div class="schedule-hero-content">
       <h1>Business Hours</h1>
       <p>Professional lighting solutions with convenient scheduling. Visit us during business hours or schedule an appointment that works for you.</p>
@@ -471,6 +606,116 @@
           <div class="day-hours">Closed</div>
           <div class="day-status closed">
             <span>●</span> Closed
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <div class="emergency-strip">
+    <div class="emergency-content">
+      <span class="emergency-icon">🚨</span>
+      <span class="emergency-text">Electrical Emergency?</span>
+      <a href="tel:+1234567890" class="emergency-link">24/7 Emergency Line: (123) 456-7890</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    &copy; <?= date("Y") ?> Boshka Lighting. All rights reserved.
+  </footer>
+
+  <script>
+          
+          <div class="service-connector">→</div>
+          
+          <div class="service-item">
+            <div class="service-icon">🏠</div>
+            <div class="service-text">
+              <h3>On-Site Visits</h3>
+              <p>We come to your location</p>
+            </div>
+          </div>
+          
+          <div class="service-connector">→</div>
+          
+          <div class="service-item">
+            <div class="service-icon">💰</div>
+            <div class="service-text">
+              <h3>Free Estimates</h3>
+              <p>Transparent, detailed quotes</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cta-section">
+          <a href="tel:+1234567890" class="cta-button primary">
+            📞 Call Now
+          </a>
+          <a href="mailto:info@boshkalighting.com" class="cta-button secondary">
+            ✉️ Email Us
+          </a>
+        </div>
+        
+        <div class="info-grid">
+          <div class="info-item" data-info="extended-hours">
+            <div class="info-header">
+              <h3>🕒 Extended Hours Available</h3>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+            <div class="info-content">
+              <p>Need to meet outside regular hours? We offer flexible scheduling for consultations and installations by appointment.</p>
+              <div class="contact-info">
+                <strong>Schedule After Hours:</strong>
+                Call us at <a href="tel:+1234567890">(123) 456-7890</a> or email <a href="mailto:appointments@boshkalighting.com">appointments@boshkalighting.com</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-item" data-info="emergency">
+            <div class="info-header">
+              <h3>� Emergency Services</h3>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+            <div class="info-content">
+              <p>Electrical emergencies don't wait for business hours. Contact us for urgent electrical repair needs including power outages, electrical fires, and safety hazards.</p>
+              <div class="contact-info">
+                <strong>24/7 Emergency Line:</strong>
+                <a href="tel:+1234567890">(123) 456-7890</a>
+                <br><small>Additional charges may apply for emergency calls</small>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-item" data-info="consultations">
+            <div class="info-header">
+              <h3>🏠 On-Site Consultations</h3>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+            <div class="info-content">
+              <p>We'll come to you! Schedule an in-home or on-site consultation to discuss your lighting project needs, assess your space, and provide expert recommendations.</p>
+              <div class="contact-info">
+                <strong>Book Consultation:</strong>
+                Available Monday-Saturday<br>
+                <a href="mailto:consultations@boshkalighting.com">consultations@boshkalighting.com</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-item" data-info="estimates">
+            <div class="info-header">
+              <h3>� Free Estimates</h3>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+            <div class="info-content">
+              <p>Get a detailed quote for your project. We provide transparent pricing with no hidden fees, including material costs, labor, and timeline estimates.</p>
+              <div class="contact-info">
+                <strong>Request Estimate:</strong>
+                Typically provided within 24-48 hours<br>
+                <a href="mailto:estimates@boshkalighting.com">estimates@boshkalighting.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -607,6 +852,27 @@
           }
         });
       });
+
+      // Add hover effects to service items
+      document.querySelectorAll('.service-item').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+          this.style.transform = '';
+        });
+      });
+
+      // Add click effects to CTA buttons
+      document.querySelectorAll('.cta-button').forEach(button => {
+        button.addEventListener('click', function() {
+          this.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            this.style.transform = '';
+          }, 150);
+        });
+      });
     }
 
     // Animate cards on load
@@ -645,3 +911,4 @@
   </script>
 </body>
 </html>
+
