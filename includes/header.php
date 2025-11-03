@@ -378,7 +378,6 @@ $currentPage = basename($_SERVER['SCRIPT_NAME'], '.php');
           <li><a href="<?= $baseUrl; ?>/schedule.php" class="<?= $currentPage === 'schedule' ? 'active' : '' ?>">Schedule</a></li>
           <li><a href="<?= $baseUrl; ?>/contact.php" class="<?= $currentPage === 'contact' ? 'active' : '' ?>">Contact</a></li>
           <li><a href="https://boshkaelectric.com/" target="_blank" rel="noopener">Electric</a></li>
-          <li><a href="<?= $baseUrl; ?>/#products" data-scroll-target="products">Products</a></li>
         </ul>
       </nav>
     </div>

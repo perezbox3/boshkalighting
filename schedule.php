@@ -481,7 +481,7 @@
     <div class="emergency-content">
       <span class="emergency-icon">🚨</span>
       <span class="emergency-text">Electrical Emergency?</span>
-      <a href="tel:+1234567890" class="emergency-link">24/7 Emergency Line: (123) 456-7890</a>
+      <a href="tel:+1234567890" class="emergency-link">24/7 Emergency Line: (817) 757-7092</a>
     </div>
   </div>
 
