@@ -29,10 +29,10 @@
   <meta name="twitter:image" content="https://boshkalighting.com/images/logo.png" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- About Page Structured Data -->
@@ -176,6 +176,58 @@
           "name": "Taylor Drew",
           "jobTitle": "Lighting & Design Consultant",
           "url": "https://boshkalighting.com/taylor-drew",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Person",
+          "name": "Ashtyn Boshka",
+          "jobTitle": "Administrative Assistant",
+          "url": "https://boshkalighting.com/ashtyn-boshka",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Person",
+          "name": "Noah Center",
+          "jobTitle": "Warehouse & Logistics Manager",
+          "url": "https://boshkalighting.com/noah-center",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Person",
+          "name": "Avery Wollert",
+          "jobTitle": "Creative Assistant",
+          "url": "https://boshkalighting.com/avery-wollert",
+          "worksFor": {
+            "@id": "https://boshkalighting.com/#organization"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "Person",
+          "name": "Shahara Fowler",
+          "jobTitle": "MG Brick & Stone Partner",
+          "url": "https://boshkalighting.com/shahara-fowler",
           "worksFor": {
             "@id": "https://boshkalighting.com/#organization"
           }
@@ -553,21 +605,21 @@
         <a href="/ashtyn-boshka.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/noah-center.jpeg" alt="Noah Center, Industrial Electrician at Boshka Lighting, commercial electrical expert">
+        <img src="images/noah-center.jpeg" alt="Noah Center, Warehouse & Logistics Manager at Boshka Lighting, California native and volunteer firefighter">
         <h3>Noah Center</h3>
-        <p>Industrial Electrician</p>
+        <p>Warehouse & Logistics Manager</p>
         <a href="/noah-center.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/avery-wollert.jpeg" alt="Avery Wollert, Residential Electrician at Boshka Lighting, home electrical services specialist">
+        <img src="images/avery-wollert.jpeg" alt="Avery Wollert, Creative Assistant at Boshka Lighting, social media specialist and daughter of Travis Wollert">
         <h3>Avery Wollert</h3>
-        <p>Residential Electrician</p>
+        <p>Creative Assistant</p>
         <a href="/avery-wollert.php" class="team-link">Read Full Bio</a>
       </div>
       <div class="team-card">
-        <img src="images/shahara-fowler.jpg" alt="Shahara Fowler, Service Electrician at Boshka Lighting, electrical repair and maintenance expert">
+        <img src="images/shahara-fowler.jpg" alt="Shahara Fowler, MG Brick & Stone Partner, 20+ year DFW building industry veteran and BuildHERS co-founder">
         <h3>Shahara Fowler</h3>
-        <p>Service Electrician</p>
+        <p>MG Brick & Stone Partner</p>
         <a href="/shahara-fowler.php" class="team-link">Read Full Bio</a>
       </div>
     </div>

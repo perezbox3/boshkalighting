@@ -15,10 +15,10 @@
   <meta property="og:type" content="profile" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Fonts -->
@@ -187,9 +187,6 @@
     </p>
     <p>
       <span class="highlight">Driven, dependable, and always eager to go the extra mile</span>, Taylor takes pride in creating a smooth, enjoyable experience for every client she works with. Her thoughtful approach, friendly demeanor, and passion for making spaces feel just right make her an invaluable member of the Boshka Lighting & Electric team.
-    </p>
-    <p>
-      When you work with Taylor, you're getting someone who truly cares about bringing your vision to life with both technical expertise and creative flair.
     </p>
   </section>
 

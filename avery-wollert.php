@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Avery Wollert | Residential Electrician | Boshka Lighting</title>
-  <meta name="description" content="Meet Avery Wollert, Residential Electrician at Boshka Lighting. Bringing fresh energy to home electrical projects with a focus on modern solutions and customer satisfaction." />
+  <title>Meet Avery Wollert | Creative Assistant | Boshka Lighting</title>
+  <meta name="description" content="Meet Avery Wollert, Creative Assistant at Boshka Lighting. Daughter of Travis Wollert of Creed Custom Homes, managing social media and bringing creative energy to our showroom." />
   <link rel="canonical" href="https://boshkalighting.com/avery-wollert" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Meet Avery Wollert | Residential Electrician | Boshka Lighting" />
-  <meta property="og:description" content="Meet Avery Wollert, residential electrician specializing in modern home electrical solutions and smart home integration." />
+  <meta property="og:title" content="Meet Avery Wollert | Creative Assistant | Boshka Lighting" />
+  <meta property="og:description" content="Meet Avery Wollert, Creative Assistant managing social media, daughter of Travis Wollert, and future interior design student." />
   <meta property="og:image" content="https://boshkalighting.com/images/bing.jpg" />
   <meta property="og:url" content="https://boshkalighting.com/avery-wollert" />
   <meta property="og:type" content="profile" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Fonts -->
@@ -36,7 +36,7 @@
     }
 
     body {
-      font-family: 'Montserrat', sans-sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background-color: #f7f7f7;
       color: #1a1a1a;
       display: flex;
@@ -171,7 +171,7 @@
   <section class="profile-header">
     <div class="profile-info">
       <h1>Avery Wollert</h1>
-      <h3>Residential Electrician</h3>
+      <h3>Creative Assistant</h3>
     </div>
     <div class="profile-image">
       <img src="images/avery-wollert.jpeg" alt="Portrait of Avery Wollert">
@@ -180,16 +180,16 @@
 
   <section class="bio-section">
     <p>
-      Avery brings <span class="highlight">fresh energy and modern perspectives</span> to our residential electrical team. As one of our talented electricians, he specializes in home electrical installations, upgrades, and smart home integration.
+      Avery brings <span class="highlight">fresh creativity and youthful energy</span> to our Lighting Showroom team. As our Creative Assistant, she manages all things social media—capturing the beauty of great design through photos, videos, and stories that shine a light on what we do best.
     </p>
     <p>
-      With a keen eye for detail and a passion for <span class="highlight">cutting-edge electrical technology</span>, Avery excels at helping homeowners modernize their electrical systems. He's particularly skilled at integrating smart home features, LED lighting systems, and energy-efficient electrical solutions.
+      As the daughter of <span class="highlight">Travis Wollert, owner of Creed Custom Homes</span>, Avery has grown up surrounded by craftsmanship, design, and the art of building beautiful spaces. You could say building and design are in her blood—and no one is better at finding a creative style and color palette than Avery.
     </p>
     <p>
-      Avery takes pride in his <span class="highlight">customer-focused approach</span>, ensuring that every residential project is completed safely, efficiently, and to the highest standards. He enjoys educating homeowners about their electrical systems and helping them make informed decisions about upgrades and improvements.
+      She's passionate about <span class="highlight">interior design and plans to study it in college</span>, combining her natural eye for style with professional training. When she's not curating content or helping around the showroom, she enjoys shopping for clothes and home décor (especially for her own room), spending time with friends and family, and staying active at the gym or on the track.
     </p>
     <p>
-      Whether it's a simple outlet installation, a complete home rewiring, or a complex smart home setup, Avery approaches each project with professionalism and expertise. His commitment to quality work and customer satisfaction makes him a valuable member of our residential team.
+      Her enthusiasm, creativity, and sense of style make her an inspiring part of our team—and a <span class="highlight">bright light for the future of design</span>.
     </p>
   </section>
 

@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Shahara Fowler | Service Electrician | Boshka Lighting</title>
-  <meta name="description" content="Meet Shahara Fowler, Service Electrician at Boshka Lighting. Expert in electrical troubleshooting, repair services, and customer service excellence." />
+  <title>Meet Shahara Fowler | MG Brick & Stone Partner | Boshka Lighting</title>
+  <meta name="description" content="Meet Shahara Fowler, 20+ year DFW building industry veteran, MG Brick & Stone partner, BuildHERS co-founder, and trusted resource for builders and homeowners." />
   <link rel="canonical" href="https://boshkalighting.com/shahara-fowler" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Meet Shahara Fowler | Service Electrician | Boshka Lighting" />
-  <meta property="og:description" content="Meet Shahara Fowler, service electrician specializing in electrical troubleshooting and repair services with exceptional customer care." />
+  <meta property="og:title" content="Meet Shahara Fowler | MG Brick & Stone Partner | Boshka Lighting" />
+  <meta property="og:description" content="Meet Shahara Fowler, 20+ year DFW building industry veteran, BuildHERS co-founder, and MG Brick & Stone partner." />
   <meta property="og:image" content="https://boshkalighting.com/images/bing.jpg" />
   <meta property="og:url" content="https://boshkalighting.com/shahara-fowler" />
   <meta property="og:type" content="profile" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Fonts -->
@@ -171,7 +171,7 @@
   <section class="profile-header">
     <div class="profile-info">
       <h1>Shahara Fowler</h1>
-      <h3>Service Electrician</h3>
+      <h3>MG Brick & Stone Partner</h3>
     </div>
     <div class="profile-image">
       <img src="images/shahara-fowler.jpg" alt="Portrait of Shahara Fowler">
@@ -180,16 +180,19 @@
 
   <section class="bio-section">
     <p>
-      Shahara is our dedicated service electrician with a <span class="highlight">proven track record in electrical troubleshooting and repair</span>. Her expertise in diagnosing and resolving electrical issues makes her an essential part of our service team.
+      For more than <span class="highlight">20 years</span>, Shahara Fowler has been a trusted partner to builders throughout the Dallas–Fort Worth residential market. With a deep understanding of design, materials, and construction collaboration, she has built her career on helping builders bring their visions to life—one home at a time.
     </p>
     <p>
-      With extensive experience in both residential and commercial electrical service calls, Shahara has developed <span class="highlight">exceptional problem-solving skills</span> that allow her to quickly identify and fix electrical problems. She specializes in emergency repairs, preventive maintenance, and electrical system upgrades.
+      As a key member of <span class="highlight">MG Brick and Stone</span>, Shahara works closely with builders to select the perfect brick and stone combinations that enhance each project's beauty and craftsmanship. She is also helping grow the MG Brick & Stone brand by bringing a vast selection of brick and stone samples into the Boshka Lighting & Electric showroom—making it easier than ever for builders and homeowners to shop locally and find everything they need in one place.
     </p>
     <p>
-      Shahara is known for her <span class="highlight">outstanding customer service</span> and ability to explain complex electrical issues in terms that clients can understand. She takes the time to educate customers about their electrical systems and provides recommendations for improving safety and efficiency.
+      Her industry knowledge, attention to detail, and dedication to client relationships have made her a valued resource throughout the DFW building community. Shahara's passion for promoting homeownership and creating spaces that families are proud to call home is at the heart of everything she does.
     </p>
     <p>
-      Whether responding to an emergency service call or performing routine electrical maintenance, Shahara approaches every job with professionalism and attention to detail. Her commitment to quality work and customer satisfaction has earned her the trust and respect of both colleagues and clients.
+      Her commitment to empowering women in the building industry also led her to co-found <span class="highlight">BuildHERS</span>, an organization dedicated to supporting and advancing women in all areas of the building profession. Through mentorship, education, and collaboration, BuildHERS continues to strengthen the role of women across construction and design.
+    </p>
+    <p>
+      When she's not working, Shahara enjoys watching her son, <span class="highlight">Westen, play football for the Aledo Bearcats</span>, catching live music with her oldest son, Trace, and keeping up with their beloved dog, Tank.
     </p>
   </section>
 

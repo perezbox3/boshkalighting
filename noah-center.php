@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Noah Center | Industrial Electrician | Boshka Lighting</title>
-  <meta name="description" content="Meet Noah Center, Industrial Electrician at Boshka Lighting. Skilled in industrial electrical work, motor control systems, and heavy equipment electrical installations." />
+  <title>Meet Noah Center | Warehouse & Logistics Manager | Boshka Lighting</title>
+  <meta name="description" content="Meet Noah Center, Warehouse & Logistics Manager at Boshka Lighting. California native, volunteer firefighter, ranch hand, and Weatherford College student pursuing firefighter/EMT certification." />
   <link rel="canonical" href="https://boshkalighting.com/noah-center" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Meet Noah Center | Industrial Electrician | Boshka Lighting" />
-  <meta property="og:description" content="Meet Noah Center, experienced industrial electrician specializing in motor control systems and heavy equipment installations." />
+  <meta property="og:title" content="Meet Noah Center | Warehouse & Logistics Manager | Boshka Lighting" />
+  <meta property="og:description" content="Meet Noah Center, Warehouse & Logistics Manager, volunteer firefighter, and former Boshka Electric apprentice keeping operations running smoothly." />
   <meta property="og:image" content="https://boshkalighting.com/images/bing.jpg" />
   <meta property="og:url" content="https://boshkalighting.com/noah-center" />
   <meta property="og:type" content="profile" />
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Fonts -->
@@ -180,16 +180,13 @@
 
   <section class="bio-section">
     <p>
-      Noah is a skilled industrial electrician with <span class="highlight">extensive experience in motor control systems</span>, power distribution, and heavy equipment electrical installations. His expertise in industrial electrical work makes him an invaluable member of our team.
+      Noah keeps our operations running smoothly—<span class="highlight">overseeing everything from warehouse organization and deliveries to fixture installations</span>. He's the go-to guy for making sure every order arrives safely and every project stays on schedule.
     </p>
     <p>
-      With years of experience in the field, Noah has developed a reputation for his <span class="highlight">methodical approach to complex electrical challenges</span>. He specializes in troubleshooting industrial equipment and implementing electrical solutions that improve operational efficiency for our commercial and industrial clients.
+      Originally from California, Noah now proudly calls Texas home. When he's not managing showroom logistics, he works as a <span class="highlight">ranch hand</span> and serves his community as a <span class="highlight">volunteer fireman with the Brock-Dennis Volunteer Fire Department</span>. He's also pursuing his goal of becoming a certified firefighter and EMT through Weatherford College.
     </p>
     <p>
-      Noah's technical knowledge extends to <span class="highlight">PLC programming, VFD installation</span>, and electrical system design for manufacturing environments. He takes pride in delivering high-quality work that meets strict safety standards and exceeds client expectations.
-    </p>
-    <p>
-      Whether it's upgrading an entire facility's electrical infrastructure or troubleshooting complex motor control issues, Noah brings both technical expertise and practical problem-solving skills to every project. His commitment to safety and precision makes him a trusted partner for our industrial clients.
+      Having previously worked under Rick Boshka at Boshka Electric as an <span class="highlight">apprentice</span>, Noah brings valuable hands-on electrical experience to the team. Simply put, he's the guy who keeps everything (and everyone) on track—and helps keep his bosses sane in the process!
     </p>
   </section>
 
