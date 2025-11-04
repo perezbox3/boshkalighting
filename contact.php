@@ -27,6 +27,7 @@
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
   <style>
+    /* CSS Variables */
     :root {
       --accent-blue: #0f6e92;
       --light-blue: #4a9bbd;
@@ -42,6 +43,7 @@
       --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 
+    /* Contact Page Hero Section */
     .contact-hero {
       background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
       color: #fff;
@@ -51,6 +53,7 @@
       overflow: hidden;
     }
 
+    /* Hero Background Pattern */
     .contact-hero::before {
       content: '';
       position: absolute;
@@ -62,11 +65,13 @@
       opacity: 0.3;
     }
 
+    /* Hero Content Container */
     .contact-hero-content {
       position: relative;
       z-index: 1;
     }
 
+    /* Hero Title */
     .contact-hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3.5rem;
@@ -75,6 +80,7 @@
       text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
+    /* Hero Subtitle */
     .contact-hero p {
       font-size: 1.3rem;
       max-width: 700px;
@@ -83,6 +89,7 @@
       opacity: 0.95;
     }
 
+    /* Quick Contact Button */
     .quick-contact {
       display: inline-flex;
       align-items: center;
@@ -104,6 +111,7 @@
       transform: translateY(-2px);
     }
 
+    /* Reset & Base Styles */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -119,23 +127,27 @@
       background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
     }
 
+    /* Main Content Area */
     main {
       flex: 1;
       padding: 80px 20px 60px;
     }
 
+    /* Main Container */
     .contact-container {
       max-width: 1400px;
       margin: 0 auto;
       padding: 0 20px;
     }
 
+    /* Page Title */
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 50px;
     }
 
+    /* Tab Navigation Links */
     .tab-links {
       display: flex;
       justify-content: center;
@@ -151,6 +163,7 @@
       margin-bottom: 50px;
     }
 
+    /* Individual Tab Link */
     .tab-link {
       background: none;
       border: none;
@@ -165,12 +178,14 @@
       text-align: center;
     }
 
+    /* Active Tab State */
     .tab-link[aria-selected="true"] {
       background: var(--accent-blue);
       color: white;
       box-shadow: var(--shadow);
     }
 
+    /* Tab Content Boxes */
     .info-box {
       display: none;
       animation: fadeIn 0.4s ease-in-out;
@@ -180,7 +195,7 @@
       display: block;
     }
 
-    /* Contact Hub - Primary Cards */
+    /* Primary Contact Cards Container */
     .contact-hub {
       display: flex;
       gap: 30px;
@@ -189,6 +204,7 @@
       justify-content: center;
     }
 
+    /* Individual Contact Card */
     .contact-card {
       background: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%);
       backdrop-filter: blur(20px);
@@ -204,6 +220,7 @@
       max-width: 350px;
     }
 
+    /* Contact Card Top Border */
     .contact-card::before {
       content: '';
       position: absolute;
@@ -215,10 +232,12 @@
       transition: height 0.3s ease;
     }
 
+    /* Contact Card Hover Effect */
     .contact-card:hover::before {
       height: 8px;
     }
 
+    /* Contact Item Top Border Animation */
     .contact-item::before {
       content: '';
       position: absolute;
@@ -231,6 +250,7 @@
       transition: transform 0.3s ease;
     }
 
+    /* Contact Item Hover Effects */
     .contact-item:hover {
       transform: translateY(-6px);
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -241,6 +261,7 @@
       transform: scaleX(1);
     }
 
+    /* Contact Item Icons */
     .contact-item i {
       font-size: 2.5rem;
       color: white;
@@ -255,6 +276,7 @@
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
 
+    /* Contact Item Text */
     .contact-item p {
       font-size: 0.75rem;
       line-height: 1.3;
@@ -262,6 +284,7 @@
       margin-bottom: 8px;
     }
 
+    /* Contact Item Labels */
     .contact-item p strong {
       color: var(--accent-blue);
       font-size: 1.1rem;
@@ -318,6 +341,7 @@
       max-width: 900px;
     }
 
+    /* Location and Hours Cards */
     .location-card, .hours-card {
       background: rgba(255,255,255,0.95);
       backdrop-filter: blur(20px);
@@ -330,11 +354,13 @@
       text-align: center;
     }
 
+    /* Location/Hours Card Hover Effects */
     .location-card:hover, .hours-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 25px 50px rgba(0,0,0,0.12);
     }
 
+    /* Card Header Section */
     .card-header {
       display: flex;
       align-items: center;
@@ -343,6 +369,7 @@
       margin-bottom: 20px;
     }
 
+    /* Card Icons */
     .location-icon, .hours-icon {
       width: 45px;
       height: 45px;
@@ -400,12 +427,14 @@
       box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
     }
 
+    /* Business Hours Grid */
     .hours-grid {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
+    /* Individual Hours Row */
     .hours-row {
       display: flex;
       justify-content: space-between;
@@ -418,10 +447,12 @@
       border-bottom: none;
     }
 
+    /* Closed Days Styling */
     .hours-row.closed {
       opacity: 0.6;
     }
 
+    /* Day Names */
     .hours-row .day {
       font-weight: 500;
       color: var(--primary-blue);
@@ -618,11 +649,13 @@
       display: inline-block;
     }
 
+    /* Pulse Animation */
     @keyframes pulse {
       0%, 100% { opacity: 1; }
       50% { opacity: 0.5; }
     }
 
+    /* Fun Facts Section */
     .fun-facts {
       background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
       color: white;
@@ -695,6 +728,7 @@
       background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
     }
 
+    /* Fade In Animation */
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -729,6 +763,7 @@
       }
     }
 
+    /* Mobile Responsive Design */
     @media (max-width: 768px) {
       .contact-hero h1 {
         font-size: 2.5rem;

@@ -25,10 +25,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
 
   <style>
+    /* ===== CSS VARIABLES ===== */
     :root {
       --accent-blue: #0F6E92;
     }
 
+    /* ===== GLOBAL RESET & BASE STYLES ===== */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -44,6 +46,7 @@
       min-height: 100vh;
     }
 
+    /* ===== BACK NAVIGATION ===== */
     .back-link {
       position: absolute;
       top: 200px;
@@ -67,15 +70,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    @media (max-width: 768px) {
-      .back-link {
-        top: 180px;
-        left: 20px;
-        font-size: 1rem;
-        padding: 10px 16px;
-      }
-    }
-
+    /* ===== PROFILE HEADER SECTION ===== */
     .profile-header {
       display: flex;
       justify-content: center;
@@ -87,6 +82,7 @@
       gap: 40px;
     }
 
+    /* ===== PROFILE IMAGE ===== */
     .profile-image {
       max-width: 380px;
       border-radius: 16px;
@@ -100,6 +96,7 @@
       display: block;
     }
 
+    /* ===== PROFILE INFORMATION ===== */
     .profile-info {
       max-width: 600px;
       text-align: left;
@@ -118,6 +115,7 @@
       font-weight: 600;
     }
 
+    /* ===== BIOGRAPHY SECTION ===== */
     .bio-section {
       max-width: 900px;
       margin: 60px auto;
@@ -131,11 +129,13 @@
       color: #444;
     }
 
+    /* ===== TEXT HIGHLIGHTING ===== */
     .highlight {
       color: var(--accent-blue);
       font-weight: 600;
     }
 
+    /* ===== SITE FOOTER ===== */
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -145,7 +145,15 @@
       margin-top: auto;
     }
 
+    /* ===== MOBILE RESPONSIVE DESIGN ===== */
     @media (max-width: 768px) {
+      .back-link {
+        top: 180px;
+        left: 20px;
+        font-size: 1rem;
+        padding: 10px 16px;
+      }
+
       .profile-header {
         flex-direction: column;
         text-align: center;

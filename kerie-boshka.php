@@ -115,10 +115,12 @@
   </script>
 
   <style>
+    /* CSS Variables */
     :root {
       --accent-blue: #0F6E92;
     }
 
+    /* Reset & Base Styles */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -134,6 +136,7 @@
       min-height: 100vh;
     }
 
+    /* Back Navigation Link */
     .back-link {
       position: absolute;
       top: 200px;
@@ -157,6 +160,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
+    /* Mobile Back Link */
     @media (max-width: 768px) {
       .back-link {
         top: 180px;
@@ -166,6 +170,7 @@
       }
     }
 
+    /* Profile Header Section */
     .profile-header {
       display: flex;
       justify-content: center;
@@ -177,6 +182,7 @@
       gap: 40px;
     }
 
+    /* Profile Image */
     .profile-image {
       max-width: 380px;
       border-radius: 16px;
@@ -190,6 +196,7 @@
       display: block;
     }
 
+    /* Profile Information */
     .profile-info {
       max-width: 600px;
       text-align: left;
@@ -208,6 +215,7 @@
       font-weight: 600;
     }
 
+    /* Biography Section */
     .bio-section {
       max-width: 900px;
       margin: 60px auto;
@@ -221,11 +229,13 @@
       color: #444;
     }
 
+    /* Text Highlighting */
     .highlight {
       color: var(--accent-blue);
       font-weight: 600;
     }
 
+    /* Site Footer */
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -235,6 +245,7 @@
       margin-top: auto;
     }
 
+    /* Mobile Responsive Design */
     @media (max-width: 768px) {
       .profile-header {
         flex-direction: column;
