@@ -1425,7 +1425,7 @@ html {
         <div class="category-content">
           <h3>Chandeliers</h3>
           <p>Statement pieces for dining, entry, and living spaces</p>
-          <a href="#chandeliers" class="category-link">Explore Collection</a>
+          <a href="https://dementlighting.com/landing/chandeliers" class="category-link">Explore Collection</a>
         </div>
       </div>
 
@@ -1436,7 +1436,7 @@ html {
         <div class="category-content">
           <h3>Pendants</h3>
           <p>Versatile lighting for kitchens, islands, and more</p>
-          <a href="#pendants" class="category-link">View More</a>
+          <a href="https://dementlighting.com/landing/pendants" class="category-link">View More</a>
         </div>
       </div>
 
@@ -1447,7 +1447,7 @@ html {
         <div class="category-content">
           <h3>Vanity</h3>
           <p>Bright, stylish fixtures for bathrooms</p>
-          <a href="#vanity" class="category-link">View More</a>
+          <a href="https://dementlighting.com/landing/bathroom-lights" class="category-link">View More</a>
         </div>
       </div>
 
@@ -1458,7 +1458,7 @@ html {
         <div class="category-content">
           <h3>Sconce</h3>
           <p>Wall-mounted accents for any room</p>
-          <a href="#sconce" class="category-link">View More</a>
+          <a href="https://dementlighting.com/landing/sconces" class="category-link">View More</a>
         </div>
       </div>
 
@@ -1469,7 +1469,7 @@ html {
         <div class="category-content">
           <h3>Fans</h3>
           <p>Functional and beautiful air circulation</p>
-          <a href="#fans" class="category-link">View More</a>
+          <a href="https://dementlighting.com/landing/fans" class="category-link">View More</a>
         </div>
       </div>
 
@@ -1480,7 +1480,7 @@ html {
         <div class="category-content">
           <h3>Exterior</h3>
           <p>Illuminate your outdoor spaces with style and security</p>
-          <a href="#exterior" class="category-link">Explore Collection</a>
+          <a href="https://dementlighting.com/landing/exteriorlighting" class="category-link">Explore Collection</a>
         </div>
       </div>
     </div>
