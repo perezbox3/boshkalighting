@@ -23,11 +23,14 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     /* ===== CSS VARIABLES ===== */
     :root {
-      --accent-blue: #0F6E92;
+      --accent-primary: #9EB2BD;
     }
 
     /* ===== GLOBAL RESET & BASE STYLES ===== */
@@ -65,7 +68,7 @@
 
     .back-link:hover {
       color: white;
-      background-color: var(--accent-blue);
+      background-color: var(--accent-primary);
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
@@ -75,7 +78,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(15, 110, 146, 0.08);
+      background-color: rgba(158, 178, 189, 0.08);
       margin-top: 120px;
       padding: 120px 40px 100px;
       flex-wrap: wrap;
@@ -110,7 +113,7 @@
 
     .profile-info h3 {
       font-size: 1.2rem;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       margin-bottom: 30px;
       font-weight: 600;
     }
@@ -131,7 +134,7 @@
 
     /* ===== TEXT HIGHLIGHTING ===== */
     .highlight {
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       font-weight: 600;
     }
 
@@ -143,6 +146,33 @@
       color: #777;
       background-color: #f7f7f7;
       margin-top: auto;
+    }
+    
+    .footer-social {
+      margin: 0 0 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    
+    .footer-social a {
+      color: #777;
+      font-size: 1.6rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(196, 178, 154, 0.1);
+      text-decoration: none;
+    }
+    
+    .footer-social a:hover {
+      background: #C4B29A;
+      color: white;
+      transform: translateY(-3px);
     }
 
     /* ===== MOBILE RESPONSIVE DESIGN ===== */
@@ -182,7 +212,7 @@
       <h3>Administrative Assistant</h3>
     </div>
     <div class="profile-image">
-      <img src="images/ashtyn-boshka.jpeg" alt="Portrait of Ashtyn Boshka">
+      <img src="/img.php?src=ashtyn.jpg&w=600&h=800" alt="Portrait of Ashtyn Boshka">
     </div>
   </section>
 
@@ -202,6 +232,14 @@
   </section>
 
   <footer>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/p/Boshka-Lighting-Electric-61571694004135/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/boshkalighting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
     &copy; <?= date("Y") ?> Boshka Lighting & Electric. All rights reserved.
   </footer>
 </body>

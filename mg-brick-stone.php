@@ -26,7 +26,7 @@
 
   <style>
     :root {
-      --accent-blue: #0F6E92;
+      --accent-primary: #9EB2BD;
     }
 
     * {
@@ -62,7 +62,7 @@
 
     .back-link:hover {
       color: white;
-      background-color: var(--accent-blue);
+      background-color: var(--accent-primary);
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
@@ -80,7 +80,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(15, 110, 146, 0.08);
+      background-color: rgba(158, 178, 189, 0.08);
       margin-top: 120px;
       padding: 120px 40px 100px;
       flex-wrap: wrap;
@@ -113,7 +113,7 @@
 
     .partnership-info h3 {
       font-size: 1.2rem;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       margin-bottom: 30px;
       font-weight: 600;
     }
@@ -132,7 +132,7 @@
     }
 
     .highlight {
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       font-weight: 600;
     }
 
@@ -148,13 +148,13 @@
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      border-left: 4px solid var(--accent-blue);
+      border-left: 4px solid var(--accent-primary);
     }
 
     .service-card h4 {
       font-size: 1.3rem;
       margin-bottom: 15px;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
     }
 
     .service-card ul {
@@ -172,7 +172,7 @@
       content: "✓";
       position: absolute;
       left: 0;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       font-weight: bold;
     }
 

@@ -43,9 +43,9 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
 <style>
   :root {
-    --header-blue: #0f6e92;
-    --header-light-blue: #4a9bbd;
-    --header-text: #1e293b;
+    --header-primary: #9EB2BD;
+    --header-warm: #C4B29A;
+    --header-text: #434D53;
     --header-white: #ffffff;
     --header-shadow: 0 10px 25px rgba(0,0,0,0.1);
     --header-backdrop: rgba(255,255,255,0.95);
@@ -68,7 +68,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     right: 0;
     background: var(--header-backdrop);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(15, 110, 146, 0.1);
+    border-bottom: 1px solid rgba(158, 178, 189, 0.1);
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
@@ -99,27 +99,30 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    max-width: calc(100% - 80px); /* Reserve space for hamburger button */
   }
 
   .brand-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 400;
-    color: var(--header-blue);
+    color: var(--header-primary);
     text-decoration: none;
     margin: 0;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
+    text-align: center;
+    word-break: break-word;
   }
 
   .brand-title:hover {
-    color: var(--header-light-blue);
-    transform: scale(1.02);
+    color: var(--header-warm);
+    transform: scale(1.12);
   }
 
   .brand-subtitle {
     font-size: 0.85rem;
-    color: var(--header-light-blue);
+    color: var(--header-warm);
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -128,8 +131,26 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
   /* Navigation Section */
   .nav-section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s, max-height 0.3s;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    box-shadow: 0 8px 32px rgba(15,110,146,0.08);
+  }
+  .nav-section.nav-open {
+    opacity: 1 !important;
+    max-height: 400px !important;
+    overflow: visible !important;
+    padding-bottom: 20px !important;
+  }
+  header.main-header:hover .nav-section,
+  header.main-header:focus-within .nav-section {
+      opacity: 1;
+      max-height: 400px;
+      overflow: visible;
+      padding-bottom: 20px;
   }
 
   .main-nav ul {
@@ -145,52 +166,63 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
   .main-nav a {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--header-text);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #434d53;
     padding: 10px 15px;
     border-radius: 25px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.2s, transform 0.2s;
     position: relative;
     background: transparent;
   }
 
   .main-nav a:hover,
   .main-nav a:focus {
-    color: var(--header-white);
-    background: linear-gradient(135deg, var(--header-blue), var(--header-light-blue));
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(15, 110, 146, 0.3);
+    background: transparent;
+    color: var(--header-warm);
+    transform: scale(1.14);
   }
 
   /* Active page indicator */
   .main-nav a.active {
-    color: var(--header-white);
-    background: linear-gradient(135deg, var(--header-blue), var(--header-light-blue));
-    box-shadow: 0 4px 15px rgba(15, 110, 146, 0.3);
+    color: var(--header-warm);
+    background: transparent;
+    transform: scale(1.14);
   }
 
   /* Mobile menu toggle */
   .menu-toggle {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 30px;
-    background: rgba(15, 110, 146, 0.1);
-    border: 2px solid rgba(15, 110, 146, 0.2);
+    background: rgba(158, 178, 189, 0.1);
+    border: 2px solid rgba(158, 178, 189, 0.3);
     border-radius: 12px;
     padding: 8px 12px;
     font-size: 1.3rem;
-    color: var(--header-blue);
+    color: var(--header-primary);
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 1001;
+  }
+
+  .menu-toggle .hamburger-icon {
+    display: block;
+    line-height: 1;
   }
 
   .menu-toggle:hover {
-    background: var(--header-blue);
+    background: var(--header-primary);
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.08);
+    border-color: var(--header-primary);
+  }
+
+  .menu-toggle:focus {
+    outline: 2px solid var(--header-primary);
+    outline-offset: 2px;
   }
 
   /* Compact header state (on scroll) */
@@ -218,6 +250,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
   @media (max-width: 900px) {
     .header-container {
       padding: 0 20px;
+      position: relative;
     }
 
     .menu-toggle {
@@ -225,11 +258,29 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     }
 
     .brand-section {
-      padding: 15px 0 10px;
+      padding: 15px 60px 10px 0; /* Extra right padding to avoid hamburger */
+      max-width: 100%;
     }
 
     .brand-title {
       font-size: 1.8rem;
+      padding-right: 10px;
+    }
+
+    /* Disable hover behavior on mobile */
+    header.main-header:hover .nav-section,
+    header.main-header:focus-within .nav-section {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      padding-bottom: 0;
+    }
+
+    .nav-section.nav-open {
+      opacity: 1 !important;
+      max-height: 500px !important;
+      overflow: visible !important;
+      padding-bottom: 20px !important;
     }
 
     .main-nav {
@@ -239,7 +290,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
       border-radius: 15px;
       margin-top: 15px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      border: 1px solid rgba(15, 110, 146, 0.1);
+      border: 1px solid rgba(158, 178, 189, 0.1);
     }
 
     .main-nav.show {
@@ -272,8 +323,24 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
   }
 
   @media (max-width: 480px) {
+    .brand-section {
+      padding: 12px 60px 8px 0; /* Ensure spacing on very small screens */
+    }
+
     .brand-title {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .brand-subtitle {
+      font-size: 0.75rem;
+    }
+
+    .menu-toggle {
+      top: 16px;
+      right: 15px;
+      padding: 7px 11px;
+      font-size: 1.2rem;
     }
 
     .main-nav ul {
@@ -312,17 +379,26 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
   body.contact .brand-subtitle,
   body.contact .main-nav a {
     color: var(--header-white);
+    text-shadow: 0 2px 8px rgba(255,255,255,0.3);
   }
 
   body.schedule .main-nav a:hover,
   body.schedule .main-nav a:focus,
-  body.schedule .main-nav a.active,
   body.contact .main-nav a:hover,
-  body.contact .main-nav a:focus,
+  body.contact .main-nav a:focus {
+    background: transparent;
+    color: var(--header-warm);
+    transform: scale(1.14);
+    text-shadow: 0 2px 12px rgba(255,255,255,0.5);
+  }
+
+  /* Active page on dark backgrounds - use cream/warm color with glow for visibility */
+  body.schedule .main-nav a.active,
   body.contact .main-nav a.active {
-    background: rgba(255,255,255,0.2);
-    color: var(--header-white);
-    box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+    background: transparent;
+    color: var(--header-warm);
+    transform: scale(1.14);
+    text-shadow: 0 2px 12px rgba(255,255,255,0.5);
   }
 
   body.schedule .menu-toggle,
@@ -349,18 +425,24 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
     body.schedule .main-nav a,
     body.contact .main-nav a {
-      color: var(--header-blue);
+      color: var(--header-primary);
     }
 
     body.schedule .main-nav a:hover,
     body.schedule .main-nav a:focus,
-    body.schedule .main-nav a.active,
     body.contact .main-nav a:hover,
-    body.contact .main-nav a:focus,
+    body.contact .main-nav a:focus {
+      background: transparent;
+      color: var(--header-warm);
+      transform: scale(1.14);
+    }
+
+    /* Active page in mobile menu - use warm color */
+    body.schedule .main-nav a.active,
     body.contact .main-nav a.active {
-      background: linear-gradient(135deg, var(--header-blue), var(--header-light-blue));
-      color: var(--header-white);
-      box-shadow: 0 4px 15px rgba(15, 110, 146, 0.3);
+      background: transparent;
+      color: var(--header-warm);
+      transform: scale(1.14);
     }
   }
 </style>
@@ -370,30 +452,26 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     
     <!-- Brand Section -->
     <div class="brand-section">
-      <?php if (!$isHomePage): ?>
-        <a href="<?= $baseUrl; ?>/" class="brand-title">Boshka Lighting</a>
-      <?php else: ?>
-        <h1 class="brand-title">Boshka Lighting</h1>
-      <?php endif; ?>
-      <div class="brand-subtitle">Illuminating Excellence</div>
+      <!-- Optional image slot for future logo/photo -->
+      <!-- <img src="/images/header-image.jpg" alt="Header Image" class="header-image" style="display:none;" /> -->
+      <h1 class="brand-title">Boshka Lighting & Electric</h1>
     </div>
 
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false">
-      <span class="visually-hidden">Toggle navigation</span>
-      <i class="menu-icon">☰</i>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="hamburger-icon">☰</span>
     </button>
 
-    <!-- Navigation Section -->
-    <div class="nav-section">
+    <!-- Navigation only appears on header hover -->
+    <div class="nav-section" id="nav-hover-area">
       <nav id="primary-navigation" class="main-nav" aria-label="Main navigation">
         <ul>
           <?php if (!$isHomePage): ?>
             <li><a href="<?= $baseUrl; ?>/" class="<?= $currentPage === 'index' ? 'active' : '' ?>">Home</a></li>
           <?php endif; ?>
           <li><a href="<?= $baseUrl; ?>/about.php" class="<?= $currentPage === 'about' ? 'active' : '' ?>">About</a></li>
-          <li><a href="<?= $baseUrl; ?>/schedule.php" class="<?= $currentPage === 'schedule' ? 'active' : '' ?>">Schedule</a></li>
           <li><a href="<?= $baseUrl; ?>/contact.php" class="<?= $currentPage === 'contact' ? 'active' : '' ?>">Contact</a></li>
+          <li><a href="<?= $baseUrl; ?>/gallery.php" class="<?= $currentPage === 'gallery' ? 'active' : '' ?>">Gallery</a></li>
           <li><a href="https://boshkaelectric.com/" target="_blank" rel="noopener">Electric</a></li>
         </ul>
       </nav>
@@ -407,25 +485,53 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     const header = document.getElementById('main-header');
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.main-nav');
-    
+    const navSection = document.getElementById('nav-hover-area');
+
     let lastScrollY = window.scrollY;
     let ticking = false;
 
     // Mobile menu toggle
     if (toggle && nav) {
-      toggle.addEventListener('click', () => {
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-expanded', String(!expanded));
         nav.classList.toggle('show');
+        navSection.classList.toggle('nav-open');
       });
 
       // Close mobile menu when clicking outside
       document.addEventListener('click', (e) => {
         if (!header.contains(e.target) && nav.classList.contains('show')) {
           nav.classList.remove('show');
+          navSection.classList.remove('nav-open');
           toggle.setAttribute('aria-expanded', 'false');
         }
       });
+
+      // Close menu when clicking a link
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 900) {
+            nav.classList.remove('show');
+            navSection.classList.remove('nav-open');
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+
+    // Snap dropdown closed on mouseleave
+    if (header && navSection) {
+      // Only enable hover behavior on desktop
+      if (window.innerWidth > 900) {
+        header.addEventListener('mouseleave', () => {
+          navSection.classList.remove('nav-open');
+        });
+        header.addEventListener('mouseenter', () => {
+          navSection.classList.add('nav-open');
+        });
+      }
     }
 
     // Dynamic header behavior on scroll
@@ -493,6 +599,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     window.addEventListener('resize', () => {
       if (window.innerWidth > 900 && nav) {
         nav.classList.remove('show');
+        navSection.classList.remove('nav-open');
         toggle && toggle.setAttribute('aria-expanded', 'false');
       }
     });

@@ -28,6 +28,9 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
 /* ===================== */
@@ -35,21 +38,22 @@
 /* ===================== */
 
 :root {
-  --accent-blue: #0f6e92;
-  --light-blue: #4a9bbd;
-  --lighter-blue: #e8f4f8;
-  --primary-blue: #1e293b;
-  --text-dark: #1e293b;
-  --text-light: #64748b;
+  --accent-primary: #9EB2BD;
+  --accent-warm: #C4B29A;
+  --accent-neutral: #B6B2AB;
+  --accent-dark: #434D53;
+  --accent-light: #D5D7D6;
+  --text-dark: #434D53;
+  --text-light: #6b7177;
   --white: #ffffff;
   --gray-50: #f8fafc;
   --gray-100: #f1f5f9;
-  --gray-900: #0f172a;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --gradient-blue: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
-  --gradient-light: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+  --gray-900: #434D53;
+  --shadow: 0 4px 6px -1px rgba(67, 77, 83, 0.1), 0 2px 4px -1px rgba(67, 77, 83, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(67, 77, 83, 0.1), 0 4px 6px -2px rgba(67, 77, 83, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(67, 77, 83, 0.1), 0 10px 10px -5px rgba(67, 77, 83, 0.04);
+  --gradient-primary: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-warm) 100%);
+  --gradient-light: linear-gradient(135deg, #f8fafc 0%, var(--accent-light) 100%);
 }
 
 * {
@@ -78,7 +82,7 @@ html {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/Carlisle_CH314812_LIFESTYLE.jpg') center/cover no-repeat;
+  background: url('/img.php?src=hero.webp&w=1920&h=1080&q=82') center/cover no-repeat;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -101,21 +105,21 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(15, 110, 146, 0.1) 0%, rgba(74, 155, 189, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(158, 178, 189, 0.1) 0%, rgba(196, 178, 154, 0.2) 100%);
   z-index: 1;
 }
 
-.hero-pattern {
-  position: absolute;
-  inset: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  opacity: 0.3;
-  z-index: 1;
-}
 
 .hero-content {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0 30px;
   max-width: 1200px;
@@ -175,14 +179,14 @@ html {
 }
 
 .hero-btn.primary {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   border-color: transparent;
-  box-shadow: 0 10px 25px rgba(15, 110, 146, 0.3);
+  box-shadow: 0 10px 25px rgba(158, 178, 189, 0.3);
 }
 
 .hero-btn.primary:hover {
-  background: linear-gradient(135deg, #0d5c78 0%, #3e8ca8 100%);
-  box-shadow: 0 15px 35px rgba(15, 110, 146, 0.4);
+  background: linear-gradient(135deg, #8da3ae 0%, #b5a08c 100%);
+  box-shadow: 0 15px 35px rgba(158, 178, 189, 0.4);
 }
 
 .scroll-indicator {
@@ -285,7 +289,7 @@ html {
 }
 
 .features-header .highlight {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -310,7 +314,7 @@ html {
   padding: 40px 30px;
   border-radius: 20px;
   text-align: center;
-  border: 1px solid rgba(15, 110, 146, 0.1);
+  border: 1px solid rgba(158, 178, 189, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -323,7 +327,7 @@ html {
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -335,14 +339,14 @@ html {
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-primary);
   background: var(--white);
 }
 
 .feature-icon {
   width: 80px;
   height: 80px;
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -359,7 +363,7 @@ html {
 
 .feature-card:hover .feature-icon {
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 30px rgba(15, 110, 146, 0.4);
+  box-shadow: 0 10px 30px rgba(158, 178, 189, 0.4);
 }
 
 .feature-card h3 {
@@ -418,7 +422,7 @@ html {
 }
 
 .process-header .highlight {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -450,13 +454,13 @@ html {
   top: 70px;
   bottom: -50px;
   width: 2px;
-  background: linear-gradient(to bottom, var(--accent-blue), transparent);
+  background: linear-gradient(to bottom, var(--accent-primary), transparent);
 }
 
 .step-number {
   width: 70px;
   height: 70px;
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -464,13 +468,13 @@ html {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--white);
-  box-shadow: 0 8px 25px rgba(15, 110, 146, 0.3);
+  box-shadow: 0 8px 25px rgba(158, 178, 189, 0.3);
   transition: all 0.3s ease;
 }
 
 .process-step:hover .step-number {
   transform: scale(1.1);
-  box-shadow: 0 12px 35px rgba(15, 110, 146, 0.4);
+  box-shadow: 0 12px 35px rgba(158, 178, 189, 0.4);
 }
 
 .step-content {
@@ -478,14 +482,14 @@ html {
   padding: 30px;
   border-radius: 15px;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(15, 110, 146, 0.1);
+  border: 1px solid rgba(158, 178, 189, 0.1);
   transition: all 0.3s ease;
 }
 
 .step-content:hover {
   transform: translateX(10px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-primary);
 }
 
 .step-content h3 {
@@ -539,6 +543,17 @@ html {
 
 /* ===================== */
 /*  Products Showcase    */
+/* Showroom Section Title Styling */
+.showroom-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 80px 0 40px;
+  text-align: center;
+}
+.showroom-title .highlight {
+  color: var(--accent-warm);
+}
 /* ===================== */
 
 .products-showcase {
@@ -566,7 +581,7 @@ html {
 }
 
 .showcase-header .highlight {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -592,7 +607,7 @@ html {
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(15, 110, 146, 0.1);
+  border: 1px solid rgba(158, 178, 189, 0.1);
   position: relative;
 }
 
@@ -603,7 +618,7 @@ html {
 .product-category:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-primary);
 }
 
 .category-image {
@@ -643,7 +658,7 @@ html {
 }
 
 .category-link {
-  color: var(--accent-blue);
+  color: var(--accent-primary);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -654,7 +669,7 @@ html {
 }
 
 .category-link:hover {
-  color: var(--light-blue);
+  color: var(--accent-warm);
   transform: translateX(3px);
 }
 
@@ -666,7 +681,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   color: var(--white);
   padding: 18px 36px;
   border-radius: 50px;
@@ -674,12 +689,12 @@ html {
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 10px 25px rgba(15, 110, 146, 0.3);
+  box-shadow: 0 10px 25px rgba(158, 178, 189, 0.3);
 }
 
 .showcase-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(15, 110, 146, 0.4);
+  box-shadow: 0 15px 35px rgba(158, 178, 189, 0.4);
 }
 
 .showcase-btn svg {
@@ -710,8 +725,8 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 25% 25%, rgba(15, 110, 146, 0.05) 0%, transparent 50%),
-              radial-gradient(circle at 75% 75%, rgba(74, 155, 189, 0.03) 0%, transparent 50%);
+  background: radial-gradient(circle at 25% 25%, rgba(158, 178, 189, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 75% 75%, rgba(196, 178, 154, 0.03) 0%, transparent 50%);
   z-index: 0;
 }
 
@@ -736,7 +751,7 @@ html {
 }
 
 .testimonials-header .highlight {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -768,7 +783,7 @@ html {
 }
 
 .view-all-reviews {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   color: var(--white);
   padding: 8px 16px;
   border-radius: 20px;
@@ -780,7 +795,7 @@ html {
 
 .view-all-reviews:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(15, 110, 146, 0.3);
+  box-shadow: 0 8px 20px rgba(158, 178, 189, 0.3);
   color: var(--white);
 }
 
@@ -819,7 +834,7 @@ html {
   padding: 50px 40px;
   border-radius: 25px;
   box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(15, 110, 146, 0.08);
+  border: 1px solid rgba(158, 178, 189, 0.08);
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -828,7 +843,7 @@ html {
 .review-link:hover .review-card {
   transform: translateY(-3px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-primary);
 }
 
 .review-card.active {
@@ -842,7 +857,7 @@ html {
   top: -15px;
   left: 40px;
   font-size: 4rem;
-  color: var(--lighter-blue);
+  color: var(--accent-light);
   font-family: 'Playfair Display', serif;
   line-height: 1;
 }
@@ -872,7 +887,7 @@ html {
 
 .review-author strong {
   font-size: 1.1rem;
-  color: var(--accent-blue);
+  color: var(--accent-primary);
   font-weight: 600;
 }
 
@@ -903,12 +918,12 @@ html {
   left: 0;
   right: 0;
   height: 1px;
-  background: rgba(15, 110, 146, 0.1);
+  background: rgba(158, 178, 189, 0.1);
 }
 
 .review-nav-btn {
   background: var(--white);
-  border: 2px solid rgba(15, 110, 146, 0.2);
+  border: 2px solid rgba(158, 178, 189, 0.2);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -916,16 +931,16 @@ html {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--accent-blue);
+  color: var(--accent-primary);
   transition: all 0.3s ease;
   box-shadow: var(--shadow);
 }
 
 .review-nav-btn:hover {
-  background: var(--accent-blue);
+  background: var(--accent-primary);
   color: var(--white);
   transform: scale(1.1);
-  border-color: var(--accent-blue);
+  border-color: var(--accent-primary);
 }
 
 .review-dots {
@@ -937,14 +952,14 @@ html {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(15, 110, 146, 0.3);
+  background: rgba(158, 178, 189, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .dot.active,
 .dot:hover {
-  background: var(--accent-blue);
+  background: var(--accent-primary);
   transform: scale(1.2);
 }
 
@@ -959,8 +974,8 @@ html {
 .loading-spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid rgba(15, 110, 146, 0.1);
-  border-top: 4px solid var(--accent-blue);
+  border: 4px solid rgba(158, 178, 189, 0.1);
+  border-top: 4px solid var(--accent-primary);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 20px;
@@ -978,165 +993,20 @@ html {
 }
 
 .review-error a {
-  color: var(--accent-blue);
+  color: var(--accent-primary);
   text-decoration: none;
   font-weight: 600;
   padding: 10px 20px;
-  border: 2px solid var(--accent-blue);
+  border: 2px solid var(--accent-primary);
   border-radius: 25px;
   display: inline-block;
   transition: all 0.3s ease;
 }
 
 .review-error a:hover {
-  background: var(--accent-blue);
+  background: var(--accent-primary);
   color: var(--white);
   transform: translateY(-2px);
-}
-
-/* ===================== */
-/*  Services Overview    */
-/* ===================== */
-
-.services-overview {
-  padding: 100px 30px;
-  background: var(--gradient-light);
-  position: relative;
-  overflow: hidden;
-}
-
-.services-overview::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(15,110,146,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  z-index: 0;
-}
-
-.services-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-
-.services-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.services-header h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  font-weight: 400;
-  color: var(--text-dark);
-  margin-bottom: 20px;
-}
-
-.services-header .highlight {
-  background: var(--gradient-blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.services-header p {
-  font-size: 1.2rem;
-  color: var(--text-light);
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
-}
-
-.service-card {
-  background: var(--white);
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(15, 110, 146, 0.1);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
-  position: relative;
-}
-
-.service-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  width: 60px;
-  height: 4px;
-  background: var(--gradient-blue);
-  border-radius: 2px;
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover::before {
-  transform: translateX(-50%) scaleX(1);
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-xl);
-  border-color: var(--accent-blue);
-}
-
-.service-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 30px;
-  background: var(--gradient-blue);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  transition: all 0.3s ease;
-}
-
-.service-card:hover .service-icon {
-  transform: scale(1.1);
-  box-shadow: 0 15px 30px rgba(15, 110, 146, 0.3);
-}
-
-.service-card h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 15px;
-}
-
-.service-card p {
-  font-size: 1rem;
-  color: var(--text-light);
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.service-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-}
-
-.service-features span {
-  background: var(--lighter-blue);
-  color: var(--accent-blue);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
 }
 
 /* ===================== */
@@ -1145,7 +1015,7 @@ html {
 
 .cta-section {
   padding: 120px 30px;
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   position: relative;
   overflow: hidden;
 }
@@ -1203,7 +1073,7 @@ html {
 }
 
 .cta-feature svg {
-  color: var(--lighter-blue);
+  color: var(--accent-light);
   flex-shrink: 0;
 }
 
@@ -1233,14 +1103,14 @@ html {
 
 .cta-btn.primary {
   background: var(--white);
-  color: var(--accent-blue);
+  color: var(--accent-primary);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .cta-btn.primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-  color: var(--accent-blue);
+  color: var(--accent-primary);
 }
 
 .cta-btn.secondary {
@@ -1348,14 +1218,12 @@ html {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .products-showcase,
-  .testimonials-section,
-  .services-overview {
+  .testimonials-section {
     padding: 80px 20px;
   }
 
   .showcase-header h2,
-  .testimonials-header h2,
-  .services-header h2 {
+  .testimonials-header h2 {
     font-size: 2.2rem;
   }
 
@@ -1372,14 +1240,12 @@ html {
     height: 250px;
   }
 
-  .testimonials-grid,
-  .services-grid {
+  .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  .testimonial-card,
-  .service-card {
+  .testimonial-card {
     padding: 30px 25px;
   }
 
@@ -1466,12 +1332,38 @@ html {
   font-size: 0.9rem;
 }
 
+.footer-social {
+  margin: 30px 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-social a {
+  color: var(--white);
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
 /* ===================== */
 /*     Footer Styles     */
 /* ===================== */
 
 .site-footer {
-  background: var(--gradient-blue);
+  background: var(--gradient-primary);
   color: var(--white);
   text-align: center;
   padding: 60px 20px;
@@ -1507,121 +1399,13 @@ html {
     <!-- <source src="videos/hero-video.mp4" type="video/mp4"> -->
   </video>
   
-  <div class="hero-pattern"></div>
-  
-  <div class="hero-content">
-    <img src="images/logo.png" alt="Boshka Lighting Logo" class="hero-logo">
-    <h1 class="tagline">
-      Where Design Meets Power<br>
-      <span style="opacity: 0.9;">Expert Lighting & Electrical Solutions Tailored to You</span>
-    </h1>
-    
-    <div class="hero-cta">
-      <a href="#products" class="hero-btn primary">
-        <span>Explore Products</span>
-        <svg fill="currentColor" viewBox="0 0 20 20" style="width: 16px; height: 16px;">
-          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-        </svg>
-      </a>
-      <a href="/contact.php" class="hero-btn">
-        <span>Get Consultation</span>
-        <svg fill="currentColor" viewBox="0 0 20 20" style="width: 16px; height: 16px;">
-          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-        </svg>
-      </a>
-    </div>
+  <!-- Removed hero-pattern overlay -->
+  <div class="hero-content" style="pointer-events:none;">
   </div>
-
   <div class="scroll-indicator">
     <svg fill="currentColor" viewBox="0 0 20 20">
       <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
     </svg>
-  </div>
-</section>
-
-<!-- Features Section -->
-<section class="features-section">
-  <div class="features-container">
-    <div class="features-header">
-      <h2>Why Choose <span class="highlight">Boshka</span> Lighting?</h2>
-      <p>We combine artistry with expertise to create lighting solutions that transform spaces and elevate experiences.</p>
-    </div>
-    
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-          </svg>
-        </div>
-        <h3>Premium Quality</h3>
-        <p>Hand-selected fixtures from top manufacturers ensuring durability, beauty, and lasting performance.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-          </svg>
-        </div>
-        <h3>Expert Installation</h3>
-        <p>Licensed electricians with years of experience ensuring safe, code-compliant installations every time.</p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg fill="currentColor" viewBox="0 0 20 20">
-            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-          </svg>
-        </div>
-        <h3>Personal Service</h3>
-        <p>Dedicated consultation from design to completion, ensuring your vision becomes reality.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Process Section -->
-<section class="process-section">
-  <div class="process-container">
-    <div class="process-header">
-      <h2>Our <span class="highlight">Simple</span> Process</h2>
-      <p>From initial consultation to final installation, we make the journey seamless and enjoyable.</p>
-    </div>
-    
-    <div class="process-timeline">
-      <div class="process-step">
-        <div class="step-number">01</div>
-        <div class="step-content">
-          <h3>Consultation</h3>
-          <p>We discuss your vision, space, and lighting goals to understand exactly what you need.</p>
-        </div>
-      </div>
-      
-      <div class="process-step">
-        <div class="step-number">02</div>
-        <div class="step-content">
-          <h3>Design</h3>
-          <p>Our experts create a custom lighting plan tailored to your space and style preferences.</p>
-        </div>
-      </div>
-      
-      <div class="process-step">
-        <div class="step-number">03</div>
-        <div class="step-content">
-          <h3>Selection</h3>
-          <p>Choose from our curated collection of premium fixtures and lighting solutions.</p>
-        </div>
-      </div>
-      
-      <div class="process-step">
-        <div class="step-number">04</div>
-        <div class="step-content">
-          <h3>Installation</h3>
-          <p>Professional installation by licensed electricians, ensuring perfect results and safety.</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1636,67 +1420,67 @@ html {
     <div class="products-grid">
       <div class="product-category large">
         <div class="category-image">
-          <img src="images/ceiling.jpg" alt="Ceiling Lights">
+          <img src="/img.php?src=Chandeliers.jpg&w=600&h=600" alt="Chandeliers">
         </div>
         <div class="category-content">
-          <h3>Ceiling Lights</h3>
-          <p>Elegant overhead lighting solutions for every room</p>
-          <a href="https://dementlighting.com/landing/ceilinglights" class="category-link">Explore Collection</a>
+          <h3>Chandeliers</h3>
+          <p>Statement pieces for dining, entry, and living spaces</p>
+          <a href="#chandeliers" class="category-link">Explore Collection</a>
         </div>
       </div>
-      
+
       <div class="product-category">
         <div class="category-image">
-          <img src="images/wall.jpg" alt="Wall Lights">
+          <img src="/img.php?src=Pendants.jpg&w=600&h=600" alt="Pendants">
         </div>
         <div class="category-content">
-          <h3>Wall Lights</h3>
-          <p>Stylish sconces and wall-mounted fixtures</p>
-          <a href="https://dementlighting.com/landing/walllights" class="category-link">View More</a>
+          <h3>Pendants</h3>
+          <p>Versatile lighting for kitchens, islands, and more</p>
+          <a href="#pendants" class="category-link">View More</a>
         </div>
       </div>
-      
+
       <div class="product-category">
         <div class="category-image">
-          <img src="images/fans.jpg" alt="Ceiling Fans">
+          <img src="/img.php?src=Vanity.jpg&w=600&h=600" alt="Vanity">
         </div>
         <div class="category-content">
-          <h3>Ceiling Fans</h3>
+          <h3>Vanity</h3>
+          <p>Bright, stylish fixtures for bathrooms</p>
+          <a href="#vanity" class="category-link">View More</a>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <div class="category-image">
+          <img src="/img.php?src=Sconce.jpg&w=600&h=600" alt="Sconce">
+        </div>
+        <div class="category-content">
+          <h3>Sconce</h3>
+          <p>Wall-mounted accents for any room</p>
+          <a href="#sconce" class="category-link">View More</a>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <div class="category-image">
+          <img src="/img.php?src=fans.jpg&w=600&h=600" alt="Fans">
+        </div>
+        <div class="category-content">
+          <h3>Fans</h3>
           <p>Functional and beautiful air circulation</p>
-          <a href="https://dementlighting.com/landing/fans" class="category-link">View More</a>
+          <a href="#fans" class="category-link">View More</a>
         </div>
       </div>
-      
+
       <div class="product-category large">
         <div class="category-image">
-          <img src="images/exterior.jpg" alt="Exterior Lighting">
+          <img src="/img.php?src=Exterior.jpg&w=600&h=600" alt="Exterior">
         </div>
         <div class="category-content">
-          <h3>Exterior Lighting</h3>
+          <h3>Exterior</h3>
           <p>Illuminate your outdoor spaces with style and security</p>
-          <a href="https://dementlighting.com/landing/exteriorlighting" class="category-link">Explore Collection</a>
-        </div>
-      </div>
-      
-      <div class="product-category">
-        <div class="category-image">
-          <img src="images/landscape.jpg" alt="Landscape Lighting">
-        </div>
-        <div class="category-content">
-          <h3>Landscape</h3>
-          <p>Transform your garden and pathways</p>
-          <a href="https://dementlighting.com/landing/landscape-lighting" class="category-link">View More</a>
-        </div>
-      </div>
-      
-      <div class="product-category">
-        <div class="category-image">
-          <img src="images/lamps.jpg" alt="Lamps">
-        </div>
-        <div class="category-content">
-          <h3>Table Lamps</h3>
-          <p>Perfect accent lighting for any surface</p>
-          <a href="https://dementlighting.com/landing/lamps" class="category-link">View More</a>
+          <a href="#exterior" class="category-link">Explore Collection</a>
         </div>
       </div>
     </div>
@@ -1708,6 +1492,18 @@ html {
           <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
         </svg>
       </a>
+    </div>
+    <div style="height:48px;"></div>
+      <div style="height:96px;"></div>
+    <div class="showroom-preview-section" style="margin: 60px 0; text-align: center;">
+      <div class="showcase-header">
+        <h2>Take a Look <span class="highlight">Inside</span> Our <span class="highlight">Showroom</span></h2>
+        <p>See the interior of Boshka Lighting & Electric. Video or photos coming soon!</p>
+      </div>
+      <!-- Placeholder for video or photo gallery -->
+      <div class="showroom-media-placeholder" style="width:100%; max-width:800px; height:400px; background:#f3f3f3; border-radius:16px; margin:0 auto 96px auto; display:flex; align-items:center; justify-content:center; color:#aaa; font-size:1.3rem;">
+        Showroom video or gallery will appear here.
+      </div>
     </div>
   </div>
 </section>
@@ -1977,8 +1773,8 @@ function showErrorMessage() {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', initGoogleReviews);
 </script>
-  </div>
-</section>
+
+<!-- Services Overview Section -->
 
 <script>
   const carousel = document.getElementById('carousel');
@@ -2013,57 +1809,6 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
 </script>
 
 
-
-  <!-- Services Overview Section -->
-  <section class="services-overview">
-    <div class="services-container">
-      <div class="services-header">
-        <h2>Expert <span class="highlight">Electrical Services</span></h2>
-        <p>From residential repairs to commercial installations, we deliver professional electrical solutions with over 40 years of experience.</p>
-      </div>
-      
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            🏠
-          </div>
-          <h3>Residential Services</h3>
-          <p>Complete home electrical solutions including panel upgrades, outlet installation, lighting design, and emergency repairs.</p>
-          <div class="service-features">
-            <span>Panel Upgrades</span>
-            <span>Smart Home Wiring</span>
-            <span>LED Conversions</span>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            🏢
-          </div>
-          <h3>Commercial Solutions</h3>
-          <p>Professional commercial electrical services for businesses, offices, and industrial facilities with minimal downtime.</p>
-          <div class="service-features">
-            <span>Maintenance Programs</span>
-            <span>Emergency Service</span>
-            <span>Code Compliance</span>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-icon">
-            💡
-          </div>
-          <h3>Lighting Design</h3>
-          <p>Custom lighting solutions from our showroom expertise - residential and commercial lighting design and installation.</p>
-          <div class="service-features">
-            <span>Showroom Selection</span>
-            <span>Custom Design</span>
-            <span>Energy Efficiency</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Call to Action Section -->
   <section class="cta-section">
@@ -2137,6 +1882,14 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
     <!-- Footer integrated into CTA section -->
     <footer class="integrated-footer">
       <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://www.facebook.com/p/Boshka-Lighting-Electric-61571694004135/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/boshkalighting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
         <div class="footer-legacy">
           <p>&copy; <?= date("Y") ?> Boshka Lighting & Electric. All rights reserved.</p>
           <p><em>Continuing our family's 60+ year legacy in lighting excellence</em></p>

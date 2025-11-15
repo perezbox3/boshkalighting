@@ -91,16 +91,16 @@
 
   <style>
     :root {
-      --accent-blue: #0f6e92;
-      --light-blue: #4a9bbd;
-      --lighter-blue: #e8f4f8;
+      --accent-primary: #9EB2BD;
+      --accent-warm: #C4B29A;
+      --accent-light: #D5D7D6;
       --green: #10b981;
       --red: #ef4444;
       --orange: #f59e0b;
       --gray-light: #f8fafc;
       --gray-medium: #e2e8f0;
       --gray-dark: #64748b;
-      --text-dark: #1e293b;
+      --text-dark: #434D53;
       --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
@@ -117,11 +117,11 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+      background: linear-gradient(135deg, #f8fafc 0%, #D5D7D6 100%);
     }
 
     .schedule-hero {
-      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-warm) 100%);
       color: #fff;
       padding: 160px 20px 80px;
       text-align: center;
@@ -228,10 +228,10 @@
     .time-display {
       font-size: 3rem;
       font-weight: 600;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       margin-bottom: 10px;
       font-family: 'Montserrat', monospace;
-      text-shadow: 0 2px 4px rgba(15, 110, 146, 0.2);
+      text-shadow: 0 2px 4px rgba(158, 178, 189, 0.2);
     }
 
     .date-display {
@@ -265,7 +265,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--accent-blue), var(--light-blue));
+      background: linear-gradient(90deg, var(--accent-primary), var(--accent-warm));
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
@@ -280,8 +280,8 @@
     }
 
     .day-card.today {
-      border-color: var(--accent-blue);
-      background: linear-gradient(135deg, white 0%, var(--lighter-blue) 100%);
+      border-color: var(--accent-primary);
+      background: linear-gradient(135deg, white 0%, var(--accent-light) 100%);
       transform: scale(1.02);
     }
 
@@ -292,7 +292,7 @@
     .day-name {
       font-size: 1.4rem;
       font-weight: 600;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       margin-bottom: 12px;
       display: flex;
       align-items: center;
@@ -300,7 +300,7 @@
     }
 
     .day-name .today-badge {
-      background: var(--accent-blue);
+      background: var(--accent-primary);
       color: white;
       font-size: 0.7rem;
       padding: 4px 8px;
@@ -399,7 +399,7 @@
       padding: 40px 20px;
       font-size: 0.9rem;
       color: #fff;
-      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-warm) 100%);
     }
 
     @media (max-width: 768px) {
@@ -458,10 +458,7 @@
 
   <main>
     <div class="schedule-container">
-      <div class="current-time">
-        <div class="time-display" id="currentTime">--:--:--</div>
-        <div class="date-display" id="currentDate">Loading...</div>
-      </div>
+      <!-- Removed current time and date display -->
 
       <div class="schedule-grid">
         <div class="day-card" data-day="monday">
@@ -596,34 +593,7 @@
       const currentDay = dayNames[now.getDay()];
       const currentHour = now.getHours();
 
-      // Highlight current day and update status
-      document.querySelectorAll('.day-card').forEach(card => {
-        const cardDay = card.getAttribute('data-day');
-        const todayBadge = card.querySelector('.today-badge');
-        const dayStatus = card.querySelector('.day-status');
-        
-        if (cardDay === currentDay) {
-          card.classList.add('today');
-          todayBadge.style.display = 'inline';
-          
-          // Update Friday status dynamically
-          if (cardDay === 'friday') {
-            if (currentHour >= 14) { // 2pm or later
-              dayStatus.className = 'day-status appointment';
-              dayStatus.innerHTML = '<span>●</span> Appointment';
-            } else if (currentHour >= 9 && currentHour < 14) {
-              dayStatus.className = 'day-status open';
-              dayStatus.innerHTML = '<span>●</span> Open';
-            } else {
-              dayStatus.className = 'day-status closed';
-              dayStatus.innerHTML = '<span>●</span> Closed';
-            }
-          }
-        } else {
-          card.classList.remove('today');
-          todayBadge.style.display = 'none';
-        }
-      });
+      // Removed highlight and floating of current day card
 
       // Update current status
       updateBusinessStatus(currentDay, currentHour);

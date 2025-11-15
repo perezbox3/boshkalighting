@@ -24,20 +24,24 @@
   <!-- Fonts + Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
   <style>
     /* CSS Variables */
     :root {
-      --accent-blue: #0f6e92;
-      --light-blue: #4a9bbd;
-      --lighter-blue: #e8f4f8;
+      --accent-primary: #9EB2BD;
+      --accent-warm: #C4B29A;
+      --accent-light: #D5D7D6;
       --green: #10b981;
       --orange: #f59e0b;
       --gray-light: #f8fafc;
       --gray-medium: #e2e8f0;
       --gray-dark: #64748b;
-      --text-dark: #1e293b;
+      --text-dark: #434D53;
       --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
       --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -45,7 +49,7 @@
 
     /* Contact Page Hero Section */
     .contact-hero {
-      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-warm) 100%);
       color: #fff;
       padding: 160px 20px 80px;
       text-align: center;
@@ -124,7 +128,7 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background: linear-gradient(135deg, #f8fafc 0%, #e8f4f8 100%);
+      background: linear-gradient(135deg, #f8fafc 0%, #D5D7D6 100%);
     }
 
     /* Main Content Area */
@@ -180,7 +184,7 @@
 
     /* Active Tab State */
     .tab-link[aria-selected="true"] {
-      background: var(--accent-blue);
+      background: var(--accent-primary);
       color: white;
       box-shadow: var(--shadow);
     }
@@ -228,7 +232,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--accent-blue), var(--light-blue));
+      background: linear-gradient(90deg, var(--accent-primary), var(--accent-warm));
       transition: height 0.3s ease;
     }
 
@@ -245,7 +249,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--accent-blue), #4a9bbd);
+      background: linear-gradient(90deg, var(--accent-primary), #C4B29A);
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
@@ -254,7 +258,7 @@
     .contact-item:hover {
       transform: translateY(-6px);
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      border-color: var(--accent-blue);
+      border-color: var(--accent-primary);
     }
 
     .contact-item:hover::before {
@@ -265,7 +269,7 @@
     .contact-item i {
       font-size: 2.5rem;
       color: white;
-      background: linear-gradient(135deg, var(--accent-blue), #4a9bbd);
+      background: linear-gradient(135deg, var(--accent-primary), #C4B29A);
       width: 60px;
       height: 60px;
       border-radius: 50%;
@@ -286,28 +290,28 @@
 
     /* Contact Item Labels */
     .contact-item p strong {
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       font-size: 1.1rem;
       display: block;
       margin-bottom: 8px;
     }
 
     .contact-item a {
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       font-weight: 600;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 6px;
       padding: 8px 16px;
-      background: #e8f4f8;
+      background: #D5D7D6;
       border-radius: 20px;
       transition: all 0.3s ease;
       font-size: 0.85rem;
     }
 
     .contact-item a:hover {
-      background: var(--accent-blue);
+      background: var(--accent-primary);
       color: white;
       transform: translateY(-2px);
     }
@@ -315,7 +319,7 @@
     .contact-icon {
       width: 40px;
       height: 40px;
-      background: linear-gradient(135deg, var(--accent-blue), var(--light-blue));
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-warm));
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -328,7 +332,7 @@
 
     .contact-item h3 {
       font-size: 0.95rem;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       margin-bottom: 8px;
       font-weight: 600;
     }
@@ -373,7 +377,7 @@
     .location-icon, .hours-icon {
       width: 45px;
       height: 45px;
-      background: linear-gradient(135deg, var(--accent-blue), var(--light-blue));
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-warm));
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -408,7 +412,7 @@
 
     .directions-btn {
       background: rgba(59, 130, 246, 0.1);
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       padding: 10px 20px;
       border-radius: 10px;
       text-decoration: none;
@@ -421,7 +425,7 @@
     }
 
     .directions-btn:hover {
-      background: var(--accent-blue);
+      background: var(--accent-primary);
       color: white;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
@@ -460,7 +464,7 @@
 
     .hours-row .time {
       font-weight: 600;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
     }
 
     /* Hours Status Styles */
@@ -500,7 +504,7 @@
 
     .check-hours-btn {
       background: rgba(59, 130, 246, 0.1);
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       padding: 10px 20px;
       border-radius: 10px;
       text-decoration: none;
@@ -513,7 +517,7 @@
     }
 
     .check-hours-btn:hover {
-      background: var(--accent-blue);
+      background: var(--accent-primary);
       color: white;
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
@@ -521,7 +525,7 @@
 
     /* Primary Contact Card Styles */
     .primary-contact {
-      border: 2px solid var(--accent-blue);
+      border: 2px solid var(--accent-primary);
     }
 
     .contact-badge {
@@ -542,7 +546,7 @@
     .contact-icon-large {
       width: 70px;
       height: 70px;
-      background: linear-gradient(135deg, var(--accent-blue), var(--light-blue));
+      background: linear-gradient(135deg, var(--accent-primary), var(--accent-warm));
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -572,7 +576,7 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 1.1rem;
       font-weight: 600;
-      color: var(--accent-blue);
+      color: var(--accent-primary);
       margin: 15px 0;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -657,7 +661,7 @@
 
     /* Fun Facts Section */
     .fun-facts {
-      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-warm) 100%);
       color: white;
       border-radius: 20px;
       padding: 40px;
@@ -725,7 +729,33 @@
       padding: 40px 20px;
       font-size: 0.9rem;
       color: #fff;
-      background: linear-gradient(135deg, var(--accent-blue) 0%, var(--light-blue) 100%);
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-warm) 100%);
+    }
+    
+    .footer-social {
+      margin: 0 0 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    
+    .footer-social a {
+      color: #fff;
+      font-size: 1.6rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+    }
+    
+    .footer-social a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
     }
 
     /* Fade In Animation */
@@ -834,12 +864,9 @@
 
   <main>
     <div class="contact-container">
-      <div class="tab-links">
-      <button class="tab-link" type="button" data-target="visit" aria-controls="visit" aria-selected="true">Visit Us</button>
-      <button class="tab-link" type="button" data-target="location" aria-controls="location" aria-selected="false">Where to Visit</button>
-    </div>
+      <!-- Removed tab links and pill button, only Visit Us content remains -->
 
-    <div id="visit" class="info-box active" role="region" aria-live="polite">
+    <div class="info-box active" role="region" aria-live="polite">
       
       <!-- Primary Contact Cards -->
       <div class="contact-hub">
@@ -910,42 +937,19 @@
 
     </div>
 
-    <div id="location" class="info-box" role="region" aria-live="polite">
-      <div class="fun-facts">
-        <h3>Did You Know?</h3>
-        <div class="facts-grid">
-          <div class="fact-item">
-            <div class="fact-number">500+</div>
-            <div class="fact-label">Lighting fixtures on display</div>
-          </div>
-          <div class="fact-item">
-            <div class="fact-number">15min</div>
-            <div class="fact-label">Average drive from Fort Worth</div>
-          </div>
-          <div class="fact-item">
-            <div class="fact-number">24/7</div>
-            <div class="fact-label">Emergency service available</div>
-          </div>
-          <div class="fact-item">
-            <div class="fact-number">2025</div>
-            <div class="fact-label">Year we opened in Weatherford</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.5584979505577!2d-97.80726758494677!3d32.75767198096965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d4c83f66e69%3A0x2dc9482b86e716f7!2s3825%20Quanah%20Hill%20Rd%20%2311%2C%20Weatherford%2C%20TX%2076087!5e0!3m2!1sen!2sus!4v1715300103940!5m2!1sen!2sus"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
+    <!-- Removed Where to Visit tab and content -->
     </div>
   </main>
 
   <footer class="site-footer">
+    <div class="footer-social">
+      <a href="https://www.facebook.com/p/Boshka-Lighting-Electric-61571694004135/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/boshkalighting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
     &copy; <?= date("Y") ?> Boshka Lighting. All rights reserved.
   </footer>
 
