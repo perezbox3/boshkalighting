@@ -9,6 +9,11 @@
  * 3. Optimized versions are cached automatically in /images/cache/
  */
 
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 0); // Don't display to browser
+ini_set('log_errors', 1);
+
 // Configuration
 $sourceDir = __DIR__ . '/images/';
 $cacheDir = __DIR__ . '/images/cache/';
@@ -52,11 +57,12 @@ $cacheFilename = md5($src . $width . $height . $quality) . '.jpg';
 $cachePath = $cacheDir . $cacheFilename;
 
 // Check if cached version exists and is newer than source
-if (file_exists($cachePath) && filemtime($cachePath) >= filemtime($sourcePath)) {
+if (file_exists($cachePath) && filesize($cachePath) > 0 && filemtime($cachePath) >= filemtime($sourcePath)) {
     // Serve cached version
     header('Content-Type: image/jpeg');
     header('Cache-Control: public, max-age=31536000'); // 1 year
     header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 31536000) . ' GMT');
+    header('Content-Length: ' . filesize($cachePath));
     readfile($cachePath);
     exit;
 }
@@ -136,12 +142,20 @@ imagecopyresampled(
 );
 
 // Save to cache
-imagejpeg($destImage, $cachePath, $quality);
+$saveResult = imagejpeg($destImage, $cachePath, $quality);
+
+// Check if save succeeded and file has content
+if (!$saveResult || !file_exists($cachePath) || filesize($cachePath) === 0) {
+    header('HTTP/1.1 500 Internal Server Error');
+    error_log("Failed to create cached image: $cachePath");
+    die('Failed to generate image');
+}
 
 // Serve image
 header('Content-Type: image/jpeg');
 header('Cache-Control: public, max-age=31536000');
 header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 31536000) . ' GMT');
+header('Content-Length: ' . filesize($cachePath));
 readfile($cachePath);
 
 // Free memory
