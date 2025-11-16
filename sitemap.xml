@@ -129,20 +129,20 @@
     </image:image>
   </url>
 
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://boshkalighting.com/gallery.php</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Partnership Page -->
   <url>
     <loc>https://boshkalighting.com/mg-brick-stone.php</loc>
     <lastmod>2025-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-
-  <!-- Employee Owner Page -->
-  <url>
-    <loc>https://boshkalighting.com/employee-owner.php</loc>
-    <lastmod>2025-11-03</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
 
 </urlset>

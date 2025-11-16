@@ -38,10 +38,9 @@ Allow: /*-center.php
 Allow: /*-wollert.php
 Allow: /*-fowler.php
 Allow: /mg-brick-stone.php
-Allow: /employee-owner.php
+Allow: /gallery.php
 
 # Block temporary/test files
 Disallow: /test.php
-Disallow: /construction.php
 Disallow: /temp/
 Disallow: /backup/

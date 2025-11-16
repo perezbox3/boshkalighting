@@ -36,7 +36,8 @@ images/*.jpeg
 images/*.gif
 images/*.webp
 images/cache/
-images-backup.zip
+images/gallery/
+images/thumbs/
 
 # Keep specific small images needed for site structure
 !images/logo.png
