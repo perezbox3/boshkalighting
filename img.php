@@ -147,8 +147,9 @@ $saveResult = imagejpeg($destImage, $cachePath, $quality);
 // Check if save succeeded and file has content
 if (!$saveResult || !file_exists($cachePath) || filesize($cachePath) === 0) {
     header('HTTP/1.1 500 Internal Server Error');
-    error_log("Failed to create cached image: $cachePath");
-    die('Failed to generate image');
+    header('Content-Type: text/plain');
+    error_log("Failed to create cached image: $cachePath. Save result: " . ($saveResult ? 'true' : 'false'));
+    die('Failed to generate image. Check: ' . $cachePath);
 }
 
 // Serve image
