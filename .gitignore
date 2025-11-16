@@ -29,22 +29,9 @@ private/
 # Uploads (uncomment if this exists and is user-generated)
 # uploads/
 
-# Large source images (optimized versions generated on-demand)
-images/*.jpg
-images/*.png
-images/*.jpeg
-images/*.gif
-images/*.webp
+# Only ignore generated cache and thumbnails
 images/cache/
-images/gallery/
 images/thumbs/
-
-# Keep specific small images needed for site structure
-!images/logo.png
-!images/favicon.ico
-!images/apple-touch-icon.png
-!images/favicon-96x96.png
-!images/favicon.svg
 
 # Misc
 *.swp
