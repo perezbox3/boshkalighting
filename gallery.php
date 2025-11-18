@@ -13,8 +13,8 @@
     .gallery-section {
       width: 100%;
       max-width: 1400px;
-      margin: 0 auto 80px auto;
-      padding: 120px 24px 0 24px;
+      margin: 180px auto 80px auto;
+      padding: 0 24px;
     }
     .gallery-grid {
       display: grid;

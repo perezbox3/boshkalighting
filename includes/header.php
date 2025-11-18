@@ -43,7 +43,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
 <style>
   :root {
-    --header-primary: #9EB2BD;
+    --header-primary: #434D53;
     --header-warm: #C4B29A;
     --header-text: #434D53;
     --header-white: #ffffff;
@@ -94,7 +94,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
   /* Brand Section */
   .brand-section {
-    padding: 20px 0 25px;
+    padding: 25px 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +104,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
   .brand-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     font-weight: 400;
     color: var(--header-primary);
     text-decoration: none;
@@ -131,26 +131,19 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
   /* Navigation Section */
   .nav-section {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s, max-height 0.3s;
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
     width: 100%;
-    padding-bottom: 0;
-    box-shadow: 0 8px 32px rgba(15,110,146,0.08);
+    padding-bottom: 20px;
+    background: transparent;
+    box-shadow: none;
   }
   .nav-section.nav-open {
     opacity: 1 !important;
     max-height: 400px !important;
     overflow: visible !important;
     padding-bottom: 20px !important;
-  }
-  header.main-header:hover .nav-section,
-  header.main-header:focus-within .nav-section {
-      opacity: 1;
-      max-height: 400px;
-      overflow: visible;
-      padding-bottom: 20px;
   }
 
   .main-nav ul {
@@ -231,11 +224,11 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
   }
 
   header.main-header.compact .brand-title {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   header.main-header.compact .brand-section {
-    padding: 15px 0 10px;
+    padding: 18px 0 8px;
   }
 
   header.main-header.compact .nav-section {
@@ -243,7 +236,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
   }
 
   header.main-header.compact .main-nav ul {
-    gap: 25px;
+    gap: 20px;
   }
 
   /* Responsive Design */
@@ -268,8 +261,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     }
 
     /* Disable hover behavior on mobile */
-    header.main-header:hover .nav-section,
-    header.main-header:focus-within .nav-section {
+    header.main-header .nav-section {
       opacity: 0;
       max-height: 0;
       overflow: hidden;
@@ -364,87 +356,8 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     }
   }
 
-  /* Special page overrides for pages with colored backgrounds */
-  body.schedule header.main-header,
-  body.contact header.main-header {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-  }
-
-  body.schedule .brand-title,
-  body.schedule .brand-subtitle,
-  body.schedule .main-nav a,
-  body.contact .brand-title,
-  body.contact .brand-subtitle,
-  body.contact .main-nav a {
-    color: var(--header-white);
-    text-shadow: 0 2px 8px rgba(255,255,255,0.3);
-  }
-
-  body.schedule .main-nav a:hover,
-  body.schedule .main-nav a:focus,
-  body.contact .main-nav a:hover,
-  body.contact .main-nav a:focus {
-    background: transparent;
-    color: var(--header-warm);
-    transform: scale(1.14);
-    text-shadow: 0 2px 12px rgba(255,255,255,0.5);
-  }
-
-  /* Active page on dark backgrounds - use cream/warm color with glow for visibility */
-  body.schedule .main-nav a.active,
-  body.contact .main-nav a.active {
-    background: transparent;
-    color: var(--header-warm);
-    transform: scale(1.14);
-    text-shadow: 0 2px 12px rgba(255,255,255,0.5);
-  }
-
-  body.schedule .menu-toggle,
-  body.contact .menu-toggle {
-    background: rgba(255,255,255,0.1);
-    border-color: rgba(255,255,255,0.3);
-    color: var(--header-white);
-  }
-
-  body.schedule .menu-toggle:hover,
-  body.contact .menu-toggle:hover {
-    background: rgba(255,255,255,0.2);
-    color: var(--header-white);
-  }
-
-  /* Mobile menu styling for colored background pages */
-  @media (max-width: 900px) {
-    body.schedule .main-nav,
-    body.contact .main-nav {
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.3);
-    }
-
-    body.schedule .main-nav a,
-    body.contact .main-nav a {
-      color: var(--header-primary);
-    }
-
-    body.schedule .main-nav a:hover,
-    body.schedule .main-nav a:focus,
-    body.contact .main-nav a:hover,
-    body.contact .main-nav a:focus {
-      background: transparent;
-      color: var(--header-warm);
-      transform: scale(1.14);
-    }
-
-    /* Active page in mobile menu - use warm color */
-    body.schedule .main-nav a.active,
-    body.contact .main-nav a.active {
-      background: transparent;
-      color: var(--header-warm);
-      transform: scale(1.14);
-    }
-  }
+  /* Special page overrides for pages with colored backgrounds - REMOVED FOR CONSISTENCY */
+  /* All pages now use the same white header */
 </style>
 
 <header class="main-header" id="main-header">
@@ -521,18 +434,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
       });
     }
 
-    // Snap dropdown closed on mouseleave
-    if (header && navSection) {
-      // Only enable hover behavior on desktop
-      if (window.innerWidth > 900) {
-        header.addEventListener('mouseleave', () => {
-          navSection.classList.remove('nav-open');
-        });
-        header.addEventListener('mouseenter', () => {
-          navSection.classList.add('nav-open');
-        });
-      }
-    }
+    // Snap dropdown closed on mouseleave - REMOVED (no longer using hover dropdown)
 
     // Dynamic header behavior on scroll
     function updateHeader() {

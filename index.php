@@ -1495,18 +1495,57 @@ html {
     </div>
     <div style="height:48px;"></div>
       <div style="height:96px;"></div>
-    <div class="showroom-preview-section" style="margin: 60px 0; text-align: center;">
-      <div class="showcase-header">
-        <h2>Take a Look <span class="highlight">Inside</span> Our <span class="highlight">Showroom</span></h2>
-        <p>See the interior of Boshka Lighting & Electric. Video or photos coming soon!</p>
+  </div>
+</section>
+
+<!-- Meet the Team Section -->
+<section class="team-section" style="background: var(--gray-50); padding: 80px 0; margin-bottom: 0;">
+  <div class="team-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <div class="showcase-header">
+      <h2>Meet Our <span class="highlight">Team</span></h2>
+      <p>Third-generation lighting experts with 60+ years of family experience in electrical services and lighting design.</p>
+    </div>
+    
+    <div class="team-content" style="display: flex; gap: 60px; align-items: center; flex-wrap: wrap; margin-top: 60px;">
+      <div class="team-image" style="flex: 1; min-width: 300px;">
+        <img src="/img.php?src=group1.jpg&w=800&h=600" alt="Boshka Lighting Team" style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-xl); object-fit: cover; aspect-ratio: 4/3;" />
       </div>
-      <!-- Placeholder for video or photo gallery -->
-      <div class="showroom-media-placeholder" style="width:100%; max-width:800px; height:400px; background:#f3f3f3; border-radius:16px; margin:0 auto 96px auto; display:flex; align-items:center; justify-content:center; color:#aaa; font-size:1.3rem;">
-        Showroom video or gallery will appear here.
+      
+      <div class="team-description" style="flex: 1; min-width: 300px;">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 25px;">
+          Led by owners Kerie and Rick Boshka, our experienced team brings together expertise in lighting design, electrical services, and exceptional customer care. From consultation to installation, we're dedicated to bringing your vision to life.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 35px;">
+          Our showroom in Weatherford features a carefully curated selection of lighting fixtures and our team is ready to help you find the perfect solution for your home or business.
+        </p>
+        <a href="/about.php" class="team-cta-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--gradient-primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: var(--shadow);">
+          <span>Meet the Team</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .team-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .team-section .showcase-header {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .team-content {
+      flex-direction: column;
+    }
+  }
+</style>
 
 <!-- Dynamic Google Reviews Section -->
 <section class="testimonials-section">
@@ -1774,6 +1813,20 @@ function showErrorMessage() {
 document.addEventListener('DOMContentLoaded', initGoogleReviews);
 </script>
 
+<!-- Showroom Video/Preview Section -->
+<section class="showroom-section" style="background: white; padding: 80px 0;">
+  <div class="showroom-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    <div class="showcase-header">
+      <h2>Take a Look <span class="highlight">Inside</span> Our <span class="highlight">Showroom</span></h2>
+      <p>See the interior of Boshka Lighting & Electric. Video or photos coming soon!</p>
+    </div>
+    <!-- Placeholder for video or photo gallery -->
+    <div class="showroom-media-placeholder" style="width:100%; max-width:900px; height:500px; background:var(--gray-100); border-radius:16px; margin:0 auto; display:flex; align-items:center; justify-content:center; color:#aaa; font-size:1.3rem; box-shadow: var(--shadow);">
+      Showroom video or gallery will appear here.
+    </div>
+  </div>
+</section>
+
 <!-- Services Overview Section -->
 
 <script>
@@ -1888,6 +1941,9 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
           </a>
           <a href="https://www.instagram.com/boshkalighting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@boshka.lighting" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
           </a>
         </div>
         <div class="footer-legacy">

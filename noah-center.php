@@ -236,6 +236,9 @@
       <a href="https://www.instagram.com/boshkalighting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
+      <a href="https://www.tiktok.com/@boshka.lighting" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
     </div>
     &copy; <?= date("Y") ?> Boshka Lighting & Electric. All rights reserved.
   </footer>

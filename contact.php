@@ -926,7 +926,7 @@
                 <span>Open Now</span>
               </div>
             </div>
-            <p class="current-hours">Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p class="current-hours">Monday - Friday: 9:00 AM - 5:00 PM</p>
             <a href="/schedule.php" class="check-hours-btn">
               <i class="bi bi-calendar3"></i>
               Check Full Schedule
@@ -948,6 +948,9 @@
       </a>
       <a href="https://www.instagram.com/boshkalighting" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@boshka.lighting" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
       </a>
     </div>
     &copy; <?= date("Y") ?> Boshka Lighting. All rights reserved.
