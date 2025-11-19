@@ -343,7 +343,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
       left: 0 !important;
       width: 100vw !important;
       height: 100vh !important;
-      z-index: 3000 !important;
+      z-index: 9999 !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
