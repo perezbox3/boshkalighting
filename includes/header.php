@@ -241,6 +241,27 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 
   /* Responsive Design */
   @media (max-width: 900px) {
+            .header-container,
+            .brand-section {
+              position: relative !important;
+              height: 64px !important;
+              min-height: 64px !important;
+              align-items: center !important;
+              justify-content: flex-start !important;
+              z-index: 4000 !important;
+            }
+            .brand-title {
+              position: relative !important;
+              top: 0 !important;
+              left: 0 !important;
+              margin: 0 !important;
+              padding: 0 10px !important;
+              vertical-align: middle !important;
+              line-height: 64px !important;
+              height: 64px !important;
+              display: flex !important;
+              align-items: center !important;
+            }
         .brand-title,
         .brand-title:hover,
         header.main-header.compact .brand-title {
