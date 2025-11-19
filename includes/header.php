@@ -284,22 +284,24 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       border: 1px solid rgba(158, 178, 189, 0.1);
     }
-
-    .main-nav.show {
-      display: block;
-      animation: slideDown 0.3s ease;
-    }
-
-    .main-nav ul {
-      flex-direction: column;
-      gap: 0;
-      padding: 20px;
-    }
-
-    .main-nav li {
-      width: 100%;
-    }
-
+      .hamburger {
+        position: fixed;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1002;
+        background: rgba(255,255,255,0.95);
+        border-radius: 50%;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        border: 1px solid #e0e0e0;
+      }
     .main-nav a {
       display: block;
       width: 100%;

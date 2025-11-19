@@ -1013,15 +1013,19 @@ html {
 /*  Call to Action       */
 /* ===================== */
 
-.cta-section {
-  padding: 120px 30px;
-  background: var(--gradient-primary);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-section::before {
-  content: '';
+  .cta-actions {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 20px !important;
+  }
+  .cta-btn {
+    width: 100% !important;
+    max-width: 300px !important;
+    justify-content: center !important;
+    margin: 0 auto 0 auto !important;
+    display: flex !important;
+  }
   position: absolute;
   top: 0;
   left: 0;
