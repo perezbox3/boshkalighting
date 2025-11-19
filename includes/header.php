@@ -247,6 +247,13 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
           font-size: 1.8rem !important;
           transform: none !important;
           transition: none !important;
+          max-width: 60vw !important;
+          text-align: left !important;
+          margin-left: 0 !important;
+          margin-right: auto !important;
+          white-space: nowrap !important;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
         }
     .header-container {
       position: sticky !important;
