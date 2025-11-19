@@ -256,7 +256,7 @@
       <div class="hero-carousel">
           <button class="carousel-nav carousel-prev" aria-label="Previous image">‹</button>
           <img id="aboutHeroImg" src="/img.php?src=group1.jpg&w=1920&h=1080" alt="Boshka Lighting showroom exterior" class="hero-image hero-image-large" loading="eager" fetchpriority="high" decoding="async" />
-          <img id="aboutHeroImgMobile" src="/img.php?src=KQ5A5012.jpg&w=800&h=1200" alt="Boshka Lighting team" class="hero-image hero-image-mobile" loading="eager" fetchpriority="high" decoding="async" />
+          <img id="aboutHeroImgMobile" src="/img.php?src=KQ5A5017.jpg&w=800&h=1200" alt="Boshka Lighting team" class="hero-image hero-image-mobile" loading="eager" fetchpriority="high" decoding="async" />
           <button class="carousel-nav carousel-next" aria-label="Next image">›</button>
       </div>
       <script>
