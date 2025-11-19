@@ -244,16 +244,20 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
         .brand-title,
         .brand-title:hover,
         header.main-header.compact .brand-title {
-          font-size: 1.8rem !important;
+          font-size: 1.1rem !important;
           transform: none !important;
           transition: none !important;
-          max-width: 60vw !important;
+          max-width: 50vw !important;
           text-align: left !important;
           margin-left: 0 !important;
           margin-right: auto !important;
           white-space: nowrap !important;
           overflow: hidden !important;
           text-overflow: ellipsis !important;
+        }
+        .hamburger {
+          z-index: 2000 !important;
+          pointer-events: auto !important;
         }
     .header-container {
       position: sticky !important;
