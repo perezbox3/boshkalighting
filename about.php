@@ -419,325 +419,37 @@
       <h2 class="section-title">What We <span>Do Best</span></h2>
       <div class="services-grid">
         <div class="service-card-feature">
-          <span class="service-icon-feature">🏡</span>
-          <h3>Residential Lighting</h3>
-          <p>Transform your home with expertly designed lighting solutions that enhance comfort and style.</p>
+          <h3>Light Fixtures</h3>
+          <p>Discover our extensive collection of premium light fixtures for every room and style in your home or business.</p>
           <div class="service-features-list">
-            <span>Custom Lighting Design</span>
-            <span>Smart Home Integration</span>
-            <span>Energy-Efficient Solutions</span>
+            <span>Chandeliers & Pendants</span>
+            <span>Ceiling & Wall Lights</span>
+            <span>Outdoor Lighting</span>
           </div>
         </div>
         
         <div class="service-card-feature">
-          <span class="service-icon-feature">🏢</span>
-          <h3>Commercial Projects</h3>
-          <p>Professional lighting and electrical services for businesses, offices, and commercial spaces.</p>
+          <h3>Decorative Door Hardware</h3>
+          <p>Elevate your space with our curated selection of high-quality door hardware that combines style and functionality.</p>
           <div class="service-features-list">
-            <span>Office & Retail Lighting</span>
-            <span>Code Compliance</span>
-            <span>Maintenance Programs</span>
+            <span>Door Handles & Knobs</span>
+            <span>Hinges & Accessories</span>
+            <span>Custom Finishes</span>
           </div>
         </div>
         
         <div class="service-card-feature">
-          <span class="service-icon-feature">✨</span>
-          <h3>Design Consultation</h3>
-          <p>Expert guidance from our showroom to help you select the perfect fixtures for your vision.</p>
+          <h3>Cabinet Hardware</h3>
+          <p>Complete your kitchen or bathroom renovation with stylish cabinet hardware that adds the perfect finishing touch.</p>
           <div class="service-features-list">
-            <span>Showroom Experience</span>
-            <span>Design Expertise</span>
-            <span>Product Selection</span>
+            <span>Knobs & Pulls</span>
+            <span>Drawer Slides</span>
+            <span>Designer Collections</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <main class="main-section">
-
-    <h2 class="section-title">Meet Our <span>Team</span></h2>
-
-    <div class="team-section">
-      <!-- Team Member: Kerie Boshka -->
-      <div class="team-row">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=kerie.jpg&w=600&h=800" alt="Kerie Boshka, Owner and Lighting Designer" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-blue">
-          <div class="team-name">Kerie Boshka</div>
-          <div class="team-role">Owner & Lighting Designer</div>
-          <a href="/kerie-boshka.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Rick Boshka -->
-      <div class="team-row reverse">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=rick.jpg&w=600&h=800" alt="Rick Boshka, Owner and Master Electrician" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-grey">
-          <div class="team-name">Rick Boshka</div>
-          <div class="team-role">Owner & Master Electrician</div>
-          <a href="/rick-boshka.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Taylor Drew -->
-      <div class="team-row">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=taylor.jpg&w=600&h=800" alt="Taylor Drew, Lighting and Design Consultant" class="team-img team-img-taylor" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-accent">
-          <div class="team-name">Taylor Drew</div>
-          <div class="team-role">Lighting & Design Consultant</div>
-          <a href="/taylor-drew.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Ashtyn Boshka -->
-      <div class="team-row reverse">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=ashtyn.jpg&w=600&h=800" alt="Ashtyn Boshka, Administrative Assistant" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-blue">
-          <div class="team-name">Ashtyn Boshka</div>
-          <div class="team-role">Administrative Assistant</div>
-          <a href="/ashtyn-boshka.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Noah Center -->
-      <div class="team-row">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=noah.jpg&w=600&h=800" alt="Noah Center, Warehouse & Logistics Manager" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-grey">
-          <div class="team-name">Noah Center</div>
-          <div class="team-role">Warehouse & Logistics Manager</div>
-          <a href="/noah-center.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Avery Wollert -->
-      <div class="team-row reverse">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=avery.jpg&w=600&h=800" alt="Avery Wollert, Creative Assistant" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-accent">
-          <div class="team-name">Avery Wollert</div>
-          <div class="team-role">Creative Assistant</div>
-          <a href="/avery-wollert.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Shahara Fowler -->
-      <div class="team-row">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=shahara.jpg&w=600&h=800" alt="Shahara Fowler, MG Brick & Stone Partner" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-blue">
-          <div class="team-name">Shahara Fowler</div>
-          <div class="team-role">MG Brick & Stone Partner</div>
-          <a href="/shahara-fowler.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <style>
-        .team-blue {
-          background: #C4B29A !important;
-          color: #fff;
-        }
-        .team-grey {
-          background: #d1d5db !important;
-          color: #434D53;
-        }
-        .team-accent {
-          background: #3a6d7c !important;
-          color: #fff;
-        }
-      </style>
-    </div>
-  <style>
-    .team-section {
-      max-width: 1600px;
-      margin: 0 auto 100px auto;
-      padding: 0 40px;
-    }
-    .team-row {
-      display: flex;
-      align-items: stretch;
-      justify-content: center;
-      gap: 48px;
-      margin-bottom: 100px;
-      min-width: 100%;
-      width: 100%;
-    }
-    .team-row.reverse {
-      flex-direction: row-reverse;
-    }
-    .team-img-col {
-      flex: 0 0 30%;
-      max-width: 30%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-    }
-    .team-img-wrapper {
-      width: 100%;
-      height: 560px;
-      max-width: 560px;
-      max-height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8fafc;
-      box-shadow: 0 8px 24px rgba(196,178,154,0.10);
-    
-    }
-    .team-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 0;
-      box-shadow: none;
-      background: none;
-    }
-    
-    /* Specific adjustment for Taylor's image on mobile */
-    @media (max-width: 768px) {
-      .team-img-taylor {
-        object-position: center 30%;
-      }
-    }
-    
-    .team-info-col {
-      flex: 1 1 70%;
-      max-width: 70%;
-      background: #C4B29A;
-      color: #fff;
-      padding: 80px 100px;
-      border-radius: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 560px;
-      box-shadow: 0 8px 24px rgba(196,178,154,0.08);
-    }
-    .team-name {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.6rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      margin-bottom: 18px;
-      text-align: center;
-    }
-    .team-role {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 32px;
-      text-align: center;
-      letter-spacing: 1px;
-    }
-    .team-bio-btn {
-      display: inline-block;
-      padding: 12px 32px;
-      border: 2px solid #fff;
-      border-radius: 8px;
-      background: transparent;
-      color: #fff;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.05s, color 0.05s;
-      margin-top: 10px;
-    }
-    .team-bio-btn:hover {
-      background: #fff;
-      color: #C4B29A;
-    }
-    @media (max-width: 1200px) {
-      .team-section {
-        max-width: 1000px;
-        padding: 0 20px;
-      }
-      .team-row, .team-row.reverse {
-        flex-direction: column;
-        gap: 0;
-        margin-bottom: 60px;
-      }
-      .team-img-col {
-        flex: 0 0 100%;
-        max-width: 100%;
-        justify-content: center;
-      }
-      .team-img-wrapper {
-        width: 100%;
-        max-width: 400px;
-        height: 400px;
-      }
-      .team-info-col {
-        flex: 0 0 100%;
-        max-width: 100%;
-        min-height: 300px;
-        padding: 40px 30px;
-      }
-    }
-    @media (max-width: 600px) {
-      .team-section {
-        padding: 0 15px;
-      }
-      .team-row {
-        margin-bottom: 40px;
-      }
-      .team-img-wrapper {
-        width: 100%;
-        max-width: 100%;
-        height: 350px;
-      }
-      .team-info-col {
-        padding: 30px 20px;
-        min-height: 250px;
-      }
-      .team-name {
-        font-size: 1.8rem;
-        margin-bottom: 12px;
-      }
-      .team-role {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-      }
-      .team-bio-btn {
-        padding: 10px 24px;
-        font-size: 0.9rem;
-      }
-    }
-  </style>
-
-    <!-- Partnership Section -->
-    <section class="partnership-section">
-      <div class="partnership-content">
-        <h2 class="section-title">Our <span>Partnership</span></h2>
-        <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 0 20px;">
-          <p style="font-size: 1.15rem; line-height: 1.8; color: #444; margin-bottom: 30px;">
-            We're proud to partner with MG Brick & Stone, bringing together quality lighting and premium masonry services under one roof. This collaboration allows us to offer comprehensive construction solutions for builders and homeowners throughout the Dallas-Fort Worth area.
-          </p>
-          <a href="/mg-brick-stone.php" class="partnership-btn">Learn About Our Partnership</a>
-          <a href="https://mgbrickandstone.com/" target="_blank" rel="noopener" class="partnership-btn secondary">Visit MG Brick & Stone</a>
-        </div>
-      </div>
-    </section>
-  </main>
 
   <footer class="site-footer">
     <div class="footer-social">

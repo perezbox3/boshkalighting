@@ -383,9 +383,10 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
             <li><a href="<?= $baseUrl; ?>/" class="<?= $currentPage === 'index' ? 'active' : '' ?>">Home</a></li>
           <?php endif; ?>
           <li><a href="<?= $baseUrl; ?>/about.php" class="<?= $currentPage === 'about' ? 'active' : '' ?>">About</a></li>
+          <li><a href="<?= $baseUrl; ?>/our-team.php" class="<?= $currentPage === 'our-team' ? 'active' : '' ?>">Our Team</a></li>
           <li><a href="<?= $baseUrl; ?>/contact.php" class="<?= $currentPage === 'contact' ? 'active' : '' ?>">Contact</a></li>
           <li><a href="<?= $baseUrl; ?>/gallery.php" class="<?= $currentPage === 'gallery' ? 'active' : '' ?>">Gallery</a></li>
-          <li><a href="https://boshkaelectric.com/" target="_blank" rel="noopener">Electric</a></li>
+          <li><a href="https://buildherstx.com/" target="_blank" rel="noopener">BuildHERS</a></li>
         </ul>
       </nav>
     </div>

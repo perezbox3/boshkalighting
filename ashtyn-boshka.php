@@ -204,7 +204,7 @@
 <body>
   <?php include 'includes/header.php'; ?>
 
-  <a href="/about.php" class="back-link">&#8592; Back to Team</a>
+  <a href="/our-team.php" class="back-link">&#8592; Back to Team</a>
 
   <section class="profile-header">
     <div class="profile-info">
