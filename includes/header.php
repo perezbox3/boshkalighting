@@ -247,13 +247,17 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
           font-size: 1.1rem !important;
           transform: none !important;
           transition: none !important;
-          max-width: 50vw !important;
+          max-width: 90vw !important;
           text-align: left !important;
           margin-left: 0 !important;
           margin-right: auto !important;
-          white-space: nowrap !important;
-          overflow: hidden !important;
-          text-overflow: ellipsis !important;
+          white-space: pre-line !important;
+          overflow-wrap: break-word !important;
+          word-break: break-word !important;
+        }
+        .brand-title {
+          /* Wrap at ampersand */
+          word-break: keep-all !important;
         }
         .hamburger {
           z-index: 2000 !important;
