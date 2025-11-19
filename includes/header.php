@@ -242,8 +242,18 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
   /* Responsive Design */
   @media (max-width: 900px) {
     .header-container {
-      padding: 0 20px;
-      position: relative;
+      position: sticky !important;
+      top: 0 !important;
+      width: 100% !important;
+      height: 64px !important;
+      z-index: 1000 !important;
+      background: #fff !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
+      transition: none !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 0 !important;
     }
 
     .menu-toggle {
@@ -251,8 +261,12 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     }
 
     .brand-section {
-      padding: 15px 60px 10px 0; /* Extra right padding to avoid hamburger */
-      max-width: 100%;
+      padding: 0 !important;
+      max-width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      height: 64px !important;
     }
 
     .brand-title {
@@ -285,22 +299,21 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
       border: 1px solid rgba(158, 178, 189, 0.1);
     }
       .hamburger {
-        position: fixed;
-        top: 18px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1002;
-        background: rgba(255,255,255,0.95);
-        border-radius: 50%;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-        cursor: pointer;
-        transition: background 0.2s, box-shadow 0.2s;
-        border: 1px solid #e0e0e0;
+        position: absolute !important;
+        top: 8px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 48px !important;
+        height: 48px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        z-index: 1002 !important;
+        background: rgba(255,255,255,0.95) !important;
+        border-radius: 50% !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10) !important;
+        cursor: pointer !important;
+        border: 1px solid #e0e0e0 !important;
       }
     .main-nav a {
       display: block;
