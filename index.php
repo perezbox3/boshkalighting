@@ -1512,18 +1512,20 @@ html {
       </div>
       
       <div class="team-description" style="flex: 1; min-width: 300px;">
-        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 25px;">
-          Led by owners Kerie and Rick Boshka, our experienced team brings together expertise in lighting design, electrical services, and exceptional customer care. From consultation to installation, we're dedicated to bringing your vision to life.
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 35px;">
-          Our showroom in Weatherford features a carefully curated selection of lighting fixtures and our team is ready to help you find the perfect solution for your home or business.
-        </p>
-        <a href="/about.php" class="team-cta-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--gradient-primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: var(--shadow);">
-          <span>Meet the Team</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-          </svg>
-        </a>
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 25px;">
+            Led by owners Kerie and Rick Boshka, our experienced team brings together expertise in lighting design, electrical services, and exceptional customer care. From consultation to installation, we're dedicated to bringing your vision to life.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 35px;">
+            Our showroom in Weatherford features a carefully curated selection of lighting fixtures and our team is ready to help you find the perfect solution for your home or business.
+          </p>
+          <a href="/about.php" class="team-cta-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--gradient-primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: var(--shadow); margin: 0 auto;">
+            <span>Meet the Team</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1865,42 +1867,36 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
 
   <!-- Call to Action Section -->
   <section class="cta-section">
-    <div class="cta-container">
-      <div class="cta-content">
-        <div class="cta-text">
-          <h2>Ready to Illuminate Your Space?</h2>
-          <p>Experience the difference of working with a third-generation lighting designer and Master Electrician with 30+ years of experience. Continuing a 60+ year family legacy in lighting excellence.</p>
-          
-          <div class="cta-features">
-            <div class="cta-feature">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Licensed & Insured</span>
-            </div>
-            <div class="cta-feature">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 8V12L16 14M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Showroom in Weatherford</span>
-            </div>
-            <div class="cta-feature">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 7L12 12L5 7M19 7L12 2L5 7M19 7V17C19 17.5 18.5 18 18 18H6C5.5 18 5 17.5 5 17V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Free Consultations</span>
-            </div>
+    <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <div style="width: 100%; max-width: 900px;">
+        <h2 style="text-align: center; color: var(--white); font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 400; margin-bottom: 20px; line-height: 1.2;">Ready to Illuminate Your Space?</h2>
+        <p style="text-align: center; font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 40px; line-height: 1.6;">Experience the difference of working with a third-generation lighting designer and Master Electrician with 30+ years of experience. Continuing a 60+ year family legacy in lighting excellence.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start;">
+          <div style="flex: 1; min-width: 220px; max-width: 340px; margin-right: 40px;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="display: flex; align-items: center; gap: 15px; color: var(--white); margin-bottom: 24px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span style="font-size: 1.1rem; font-weight: 500;">Licensed & Insured</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 15px; color: var(--white); margin-bottom: 24px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8V12L16 14M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span style="font-size: 1.1rem; font-weight: 500;">Showroom in Weatherford</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 15px; color: var(--white);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 7L12 12L5 7M19 7L12 2L5 7M19 7V17C19 17.5 18.5 18 18 18H6C5.5 18 5 17.5 5 17V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span style="font-size: 1.1rem; font-weight: 500;">Free Consultations</span>
+              </li>
+            </ul>
           </div>
         </div>
-        
-        <div class="cta-actions">
-          <a href="tel:+18177577092" class="cta-btn primary">
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px;">
+          <a href="tel:+18177577092" class="cta-btn primary" style="width: 270px; min-width: 270px; max-width: 270px; text-align: center; white-space: nowrap;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 5C3 3.9 3.9 3 5 3H8.28C8.71 3 9.1 3.27 9.26 3.68L10.86 7.57C11.05 8.04 10.91 8.58 10.52 8.93L8.85 10.37C10.16 12.93 12.07 14.84 14.63 16.15L16.07 14.48C16.42 14.09 16.96 13.95 17.43 14.14L21.32 15.74C21.73 15.9 22 16.29 22 16.72V20C22 21.1 21.1 22 20 22H19C10.72 22 3 14.28 3 6V5Z" fill="currentColor"/>
             </svg>
             Call (817) 757-7092
           </a>
-          <a href="contact.php" class="cta-btn secondary">
+          <a href="contact.php" class="cta-btn secondary" style="width: 270px; min-width: 270px; max-width: 270px; text-align: center; white-space: nowrap;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1908,26 +1904,6 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
             Visit Our Showroom
           </a>
         </div>
-      </div>
-      
-      <div class="cta-image">
-        <div class="cta-card">
-          <div class="cta-badge">
-            👨‍👩‍👧‍👦
-          </div>
-          <h3>60+ Years Legacy</h3>
-          <p>Third-generation lighting designers serving Texas</p>
-          
-          <div class="cta-stats">
-            <div class="stat">
-              <strong>3rd Gen</strong>
-              <span>Family Business</span>
-            </div>
-            <div class="stat">
-              <strong>30+ Years</strong>
-              <span>Master Electrician</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>

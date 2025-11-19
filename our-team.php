@@ -38,9 +38,9 @@
 
   <!-- Hero Section -->
   <section class="page-hero">
-    <div class="container">
-      <h1 class="page-title">Meet Our Team</h1>
-      <p class="page-subtitle">Our dedicated team of lighting experts, designers, and support staff work together to bring your vision to life. Each member brings unique skills and passion to ensure every project exceeds expectations.</p>
+    <div class="container" style="text-align:center;">
+      <h1 class="page-title" style="text-align:center;">Meet Our Team</h1>
+      <p class="page-subtitle" style="text-align:center;">Our dedicated team of lighting experts, designers, and support staff work together to bring your vision to life. Each member brings unique skills and passion to ensure every project exceeds expectations.</p>
     </div>
   </section>
 
@@ -232,7 +232,7 @@
       letter-spacing: 1px;
     }
     .team-bio-btn {
-      display: inline-block;
+      display: block;
       padding: 12px 32px;
       border: 2px solid #fff;
       border-radius: 8px;
@@ -242,7 +242,7 @@
       font-weight: 600;
       text-decoration: none;
       transition: background 0.05s, color 0.05s;
-      margin-top: 10px;
+      margin: 10px auto 0 auto;
     }
     .team-bio-btn:hover {
       background: #fff;
