@@ -9,32 +9,27 @@
   <title>Boshka Lighting | Elegant Lighting & Electrical Solutions</title>
   <meta name="description" content="Discover Boshka Lighting—where design meets power. Expert lighting and electrical services based in Weatherford, TX.">
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://boshkalighting.com/">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Boshka Lighting | Elegant Lighting & Electrical Solutions" />
   <meta property="og:description" content="Discover Boshka Lighting—where design meets power. Expert lighting and electrical services based in Weatherford, TX." />
   <meta property="og:image" content="https://boshkalighting.com/images/logo.png" />
   <meta property="og:url" content="https://boshkalighting.com/" />
   <meta property="og:type" content="website" />
 
-  <!-- Favicon -->
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
   
-  <!-- Font Awesome for Social Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
 /* ===================== */
-/*     Modern Variables  */
+/* Modern Variables  */
 /* ===================== */
 
 :root {
@@ -76,13 +71,13 @@ html {
 }
 
 /* ===================== */
-/*     Hero Section      */
+/* Hero Section      */
 /* ===================== */
 
 .hero {
   position: relative;
   height: 100vh;
-  background: url('/img.php?src=hero.webp&w=1920&h=1080&q=82') center/cover no-repeat;
+  background: url('/img.php?src=home.jpeg&w=1920&h=1080&q=82') center/cover no-repeat;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -260,7 +255,7 @@ html {
 }
 
 /* ===================== */
-/*   Features Section    */
+/* Features Section    */
 /* ===================== */
 
 .features-section {
@@ -380,7 +375,7 @@ html {
 }
 
 /* ===================== */
-/*   Process Section     */
+/* Process Section     */
 /* ===================== */
 
 .process-section {
@@ -542,7 +537,7 @@ html {
 }
 
 /* ===================== */
-/*  Products Showcase    */
+/* Products Showcase    */
 /* Showroom Section Title Styling */
 .showroom-title {
   font-family: 'Playfair Display', serif;
@@ -622,7 +617,7 @@ html {
 }
 
 .category-image {
-  height: 200px;
+  height: 260px;
   overflow: hidden;
   position: relative;
 }
@@ -632,6 +627,20 @@ html {
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+}
+
+.category-image-lower-sconce {
+  object-position: center 0%;
+}
+
+.category-image-lower-chandeliers {
+  object-position: center 73%;
+}
+.category-image-upper-pendant {
+  object-position: center 40%;
+}
+.category-image-lower-vanity {
+  object-position: center 0%;
 }
 
 .product-category:hover .category-image img {
@@ -708,11 +717,11 @@ html {
 }
 
 /* ===================== */
-/*  Testimonials Section */
+/* Testimonials Section */
 /* ===================== */
 
 .testimonials-section {
-  padding: 20px 30px;
+  padding: 160px 30px;
   background: var(--white);
   position: relative;
   overflow: hidden;
@@ -1010,22 +1019,16 @@ html {
 }
 
 /* ===================== */
-/*  Call to Action       */
+/* Call to Action - CLEANED STYLES */
 /* ===================== */
-
-  .cta-actions {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    gap: 20px !important;
-  }
-  .cta-btn {
-    width: 100% !important;
-    max-width: 300px !important;
-    justify-content: center !important;
-    margin: 0 auto 0 auto !important;
-    display: flex !important;
-  }
+.cta-section {
+  padding: 100px 30px 0;
+  background: var(--gradient-primary);
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1036,17 +1039,21 @@ html {
 }
 
 .cta-container {
-  max-width: 1200px;
+  max-width: 1000px; /* Tighter container for a more focused look */
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  gap: 80px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
 }
 
-.cta-text h2 {
+.cta-text-area {
+    text-align: center;
+}
+
+.cta-text-area h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 400;
@@ -1055,42 +1062,57 @@ html {
   line-height: 1.2;
 }
 
-.cta-text p {
+.cta-text-area p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255,255,255,0.9);
   margin-bottom: 40px;
   line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cta-features {
+.cta-features-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.cta-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Flex 0 0 auto to allow the list to center properly when wrapped */
+    flex: 0 0 auto;
+    max-width: 340px;
+}
+.cta-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--white);
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+}
+.cta-feature-item svg {
+    color: var(--accent-light);
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.cta-button-group {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-top: 0;
 }
 
-.cta-feature {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: var(--white);
-}
-
-.cta-feature svg {
-  color: var(--accent-light);
-  flex-shrink: 0;
-}
-
-.cta-feature span {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.cta-actions {
-  display: flex;
-  gap: 20px;
-}
-
+/* Base CTA Button Styles (from old block, stripped of inline width overrides) */
 .cta-btn {
   display: inline-flex;
   align-items: center;
@@ -1103,6 +1125,11 @@ html {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  width: 270px; /* Set a default width to maintain the original look */
+  min-width: 270px;
+  max-width: 270px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .cta-btn.primary {
@@ -1137,154 +1164,47 @@ html {
 .cta-btn:hover svg {
   transform: translateX(3px);
 }
-
-.cta-image {
-  position: relative;
-}
-
-.cta-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
-  padding: 40px 30px;
-  text-align: center;
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(transparent, rgba(255, 255, 255, 0.1), transparent);
-  animation: rotate 8s linear infinite;
-  z-index: 0;
-}
-
-.cta-card > * {
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.cta-badge {
-  width: 80px;
-  height: 80px;
-  background: var(--white);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  font-size: 2rem;
-}
-
-.cta-card h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.cta-card p {
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 30px;
-}
-
-.cta-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.stat strong {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 5px;
-}
-
-.stat span {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* Mobile adjustments */
+/* End of Base CTA Button Styles */
+        
+/* Mobile adjustments for CTA */
 @media (max-width: 768px) {
-  .products-showcase,
-  .testimonials-section {
-    padding: 80px 20px;
-  }
-
-  .showcase-header h2,
-  .testimonials-header h2 {
-    font-size: 2.2rem;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .product-category.large {
-    grid-column: span 1;
-  }
-
-  .category-image {
-    height: 250px;
-  }
-
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .testimonial-card {
-    padding: 30px 25px;
-  }
-
-  .cta-section {
-    padding: 80px 20px;
-  }
-
-  .cta-container {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    text-align: center;
-  }
-
-  .cta-text h2 {
-    font-size: 2.2rem;
-  }
-
-  .cta-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-btn {
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
-  }
-  
-  .footer-content {
-    padding: 0 20px;
-  }
+    .cta-section {
+        padding: 80px 20px 0;
+    }
+    .cta-text-area h2 {
+        font-size: 2.2rem;
+    }
+    .cta-text-area p {
+        font-size: 1.1rem;
+    }
+    .cta-features-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .cta-button-group {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .cta-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        min-width: auto;
+    }
+    .cta-feature-list {
+        max-width: 300px; /* Constrain list width on mobile */
+    }
 }
+/* End of Cleaned CTA Styles */
+
 
 /* ===================== */
-/*  Integrated Footer    */
+/* Integrated Footer    */
 /* ===================== */
 
 .integrated-footer {
@@ -1363,7 +1283,7 @@ html {
 }
 
 /* ===================== */
-/*     Footer Styles     */
+/* Footer Styles     */
 /* ===================== */
 
 .site-footer {
@@ -1398,12 +1318,9 @@ html {
   <?php include 'includes/header.php'; ?>
 
 <section class="hero">
-  <!-- Future video background (currently hidden) -->
   <video class="hero-video" autoplay muted loop>
-    <!-- <source src="videos/hero-video.mp4" type="video/mp4"> -->
-  </video>
+    </video>
   
-  <!-- Removed hero-pattern overlay -->
   <div class="hero-content" style="pointer-events:none;">
   </div>
   <div class="scroll-indicator">
@@ -1413,7 +1330,6 @@ html {
   </div>
 </section>
 
-<!-- Products Showcase -->
 <section id="products" class="products-showcase">
   <div class="products-showcase-container">
     <div class="showcase-header">
@@ -1424,7 +1340,7 @@ html {
     <div class="products-grid">
       <div class="product-category large">
         <div class="category-image">
-          <img src="/img.php?src=Chandeliers.jpg&w=600&h=600" alt="Chandeliers">
+          <img src="/img.php?src=Chandeliers.jpg&w=600&h=600" alt="Chandeliers" class="category-image-lower-chandeliers">
         </div>
         <div class="category-content">
           <h3>Chandeliers</h3>
@@ -1435,7 +1351,7 @@ html {
 
       <div class="product-category">
         <div class="category-image">
-          <img src="/img.php?src=Pendants.jpg&w=600&h=600" alt="Pendants">
+          <img src="/img.php?src=Pendants.jpg&w=600&h=600" alt="Pendants" class="category-image-lower-pendant">
         </div>
         <div class="category-content">
           <h3>Pendants</h3>
@@ -1446,7 +1362,7 @@ html {
 
       <div class="product-category">
         <div class="category-image">
-          <img src="/img.php?src=Vanity.jpg&w=600&h=600" alt="Vanity">
+          <img src="/img.php?src=Vanity.jpg&w=600&h=600" alt="Vanity" class="category-image-lower-vanity">
         </div>
         <div class="category-content">
           <h3>Vanity</h3>
@@ -1457,7 +1373,7 @@ html {
 
       <div class="product-category">
         <div class="category-image">
-          <img src="/img.php?src=Sconce.jpg&w=600&h=600" alt="Sconce">
+          <img src="/img.php?src=Sconce.jpg&w=600&h=600" alt="Sconce" class="category-image-lower-sconce">
         </div>
         <div class="category-content">
           <h3>Sconce</h3>
@@ -1468,7 +1384,7 @@ html {
 
       <div class="product-category">
         <div class="category-image">
-          <img src="/img.php?src=fans.jpg&w=600&h=600" alt="Fans">
+          <img src="/img.php?src=fans.jpg&w=600&h=600" alt="Fans" class="category-image-lower-chandeliers">
         </div>
         <div class="category-content">
           <h3>Fans</h3>
@@ -1479,7 +1395,7 @@ html {
 
       <div class="product-category large">
         <div class="category-image">
-          <img src="/img.php?src=Exterior.jpg&w=600&h=600" alt="Exterior">
+          <img src="/img.php?src=Exterior.jpg&w=600&h=600" alt="Exterior" class="category-image-lower-chandeliers">
         </div>
         <div class="category-content">
           <h3>Exterior</h3>
@@ -1502,7 +1418,6 @@ html {
   </div>
 </section>
 
-<!-- Meet the Team Section -->
 <section class="team-section" style="background: var(--gray-50); padding: 80px 0; margin-bottom: 0;">
   <div class="team-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
     <div class="showcase-header">
@@ -1553,7 +1468,6 @@ html {
   }
 </style>
 
-<!-- Dynamic Google Reviews Section -->
 <section class="testimonials-section">
   <div class="testimonials-container">
     <div class="testimonials-header">
@@ -1567,7 +1481,6 @@ html {
     </div>
     
     <div class="reviews-carousel" id="reviews-carousel">
-      <!-- Loading message -->
       <div class="review-loading">
         <div class="loading-spinner"></div>
         <p>Loading Google Reviews...</p>
@@ -1581,8 +1494,7 @@ html {
         </svg>
       </button>
       <div class="review-dots" id="review-dots">
-        <!-- Dots will be generated dynamically -->
-      </div>
+        </div>
       <button class="review-nav-btn" id="nextReview">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1592,7 +1504,6 @@ html {
   </div>
 </section>
 
-<!-- Add Google Places API -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initGoogleReviews"></script>
 
 <script>
@@ -1819,21 +1730,17 @@ function showErrorMessage() {
 document.addEventListener('DOMContentLoaded', initGoogleReviews);
 </script>
 
-<!-- Showroom Video/Preview Section -->
 <section class="showroom-section" style="background: white; padding: 80px 0;">
   <div class="showroom-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
     <div class="showcase-header">
       <h2>Take a Look <span class="highlight">Inside</span> Our <span class="highlight">Showroom</span></h2>
       <p>See the interior of Boshka Lighting & Electric. Video or photos coming soon!</p>
     </div>
-    <!-- Placeholder for video or photo gallery -->
     <div class="showroom-media-placeholder" style="width:100%; max-width:900px; height:500px; background:var(--gray-100); border-radius:16px; margin:0 auto; display:flex; align-items:center; justify-content:center; color:#aaa; font-size:1.3rem; box-shadow: var(--shadow);">
       Showroom video or gallery will appear here.
     </div>
   </div>
 </section>
-
-<!-- Services Overview Section -->
 
 <script>
   const carousel = document.getElementById('carousel');
@@ -1869,50 +1776,51 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
 
 
 
-  <!-- Call to Action Section -->
   <section class="cta-section">
-    <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-      <div style="width: 100%; max-width: 900px;">
-        <h2 style="text-align: center; color: var(--white); font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 400; margin-bottom: 20px; line-height: 1.2;">Ready to Illuminate Your Space?</h2>
-        <p style="text-align: center; font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 40px; line-height: 1.6;">Experience the difference of working with a third-generation lighting designer and Master Electrician with 30+ years of experience. Continuing a 60+ year family legacy in lighting excellence.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start;">
-          <div style="flex: 1; min-width: 220px; max-width: 340px; margin-right: 40px;">
-            <ul style="list-style: none; padding: 0; margin: 0;">
-              <li style="display: flex; align-items: center; gap: 15px; color: var(--white); margin-bottom: 24px;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span style="font-size: 1.1rem; font-weight: 500;">Licensed & Insured</span>
-              </li>
-              <li style="display: flex; align-items: center; gap: 15px; color: var(--white); margin-bottom: 24px;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8V12L16 14M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span style="font-size: 1.1rem; font-weight: 500;">Showroom in Weatherford</span>
-              </li>
-              <li style="display: flex; align-items: center; gap: 15px; color: var(--white);">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 7L12 12L5 7M19 7L12 2L5 7M19 7V17C19 17.5 18.5 18 18 18H6C5.5 18 5 17.5 5 17V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span style="font-size: 1.1rem; font-weight: 500;">Free Consultations</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px;">
-          <a href="tel:+18177577092" class="cta-btn primary" style="width: 270px; min-width: 270px; max-width: 270px; text-align: center; white-space: nowrap;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 5C3 3.9 3.9 3 5 3H8.28C8.71 3 9.1 3.27 9.26 3.68L10.86 7.57C11.05 8.04 10.91 8.58 10.52 8.93L8.85 10.37C10.16 12.93 12.07 14.84 14.63 16.15L16.07 14.48C16.42 14.09 16.96 13.95 17.43 14.14L21.32 15.74C21.73 15.9 22 16.29 22 16.72V20C22 21.1 21.1 22 20 22H19C10.72 22 3 14.28 3 6V5Z" fill="currentColor"/>
+    <div class="cta-container">
+      <div class="cta-text-area">
+        <h2>Ready to Illuminate Your Space?</h2>
+        <p>Experience the difference of working with a third-generation lighting designer and Master Electrician with 30+ years of experience. Continuing a 60+ year family legacy in lighting excellence.</p>
+      </div>
+      
+      <div class="cta-features-group">
+        <ul class="cta-feature-list">
+          <li class="cta-feature-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Licensed & Insured</span>
+          </li>
+          <li class="cta-feature-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8V12L16 14M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Call (817) 757-7092
-          </a>
-          <a href="contact.php" class="cta-btn secondary" style="width: 270px; min-width: 270px; max-width: 270px; text-align: center; white-space: nowrap;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <span>Showroom in Weatherford</span>
+          </li>
+          <li class="cta-feature-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 7L12 12L5 7M19 7L12 2L5 7M19 7V17C19 17.5 18.5 18 18 18H6C5.5 18 5 17.5 5 17V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Visit Our Showroom
-          </a>
-        </div>
-        </div>
+            <span>Free Consultations</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="cta-button-group">
+        <a href="tel:+18177577092" class="cta-btn primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 5C3 3.9 3.9 3 5 3H8.28C8.71 3 9.1 3.27 9.26 3.68L10.86 7.57C11.05 8.04 10.91 8.58 10.52 8.93L8.85 10.37C10.16 12.93 12.07 14.84 14.63 16.15L16.07 14.48C16.42 14.09 16.96 13.95 17.43 14.14L21.32 15.74C21.73 15.9 22 16.29 22 16.72V20C22 21.1 21.1 22 20 22H19C10.72 22 3 14.28 3 6V5Z" fill="currentColor"/>
+          </svg>
+          Call (817) 757-7092
+        </a>
+        <a href="contact.php" class="cta-btn secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Visit Our Showroom
+        </a>
       </div>
     </div>
     
-    <!-- Footer integrated into CTA section -->
     <footer class="integrated-footer">
       <div class="footer-content">
         <div class="footer-social">
@@ -1927,7 +1835,7 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
           </a>
         </div>
         <div class="footer-legacy">
-          <p>&copy; <?= date("Y") ?> Boshka Lighting & Electric. All rights reserved.</p>
+          <p>© <?= date("Y") ?> Boshka Lighting & Electric. All rights reserved.</p>
           <p><em>Continuing our family's 60+ year legacy in lighting excellence</em></p>
         </div>
       </div>
