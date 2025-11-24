@@ -3,7 +3,7 @@
 header('Content-Type: application/json');
 
 // Load API key from environment if available; otherwise fallback to the provided key.
-$apiKey = getenv('GOOGLE_PLACES_API_KEY') ?: 'AIzaSyBQmw_LSbw5diO0lSAfiALoOmo6gcRtIMU';
+$apiKey = getenv('GOOGLE_PLACES_API_KEY') ?: '';
 $placeId = 'ChIJxxXKEAD7UYYRdYlQDCW1Z88';
 $fields = 'name,rating,user_ratings_total,reviews';
 
