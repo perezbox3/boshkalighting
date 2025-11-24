@@ -682,6 +682,21 @@ html {
   transform: translateX(3px);
 }
 
+@media (max-width: 768px) {
+  .products-showcase {
+    padding: 80px 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .product-category.large {
+    grid-column: span 1;
+  }
+}
+
 .showcase-cta {
   text-align: center;
 }
@@ -1438,7 +1453,7 @@ html {
           <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin-bottom: 35px;">
             Our showroom in Weatherford features a carefully curated selection of lighting fixtures and our team is ready to help you find the perfect solution for your home or business.
           </p>
-          <a href="/about.php" class="team-cta-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--gradient-primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: var(--shadow); margin: 0 auto;">
+          <a href="/our-team.php" class="team-cta-btn" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; background: var(--gradient-primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; box-shadow: var(--shadow); margin: 0 auto;">
             <span>Meet the Team</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
@@ -1504,27 +1519,17 @@ html {
   </div>
 </section>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initGoogleReviews"></script>
-
 <script>
-// Google Places API Configuration
-const PLACE_ID = 'ChIJx8UKENsAlgUAgIgLJSOOZs8'; // Your business place ID from the Google Maps URL
-const API_KEY = 'YOUR_GOOGLE_PLACES_API_KEY'; // You'll need to get this from Google Cloud Console
-
 let currentReview = 0;
 let reviews = [];
 
 // Initialize Google Reviews
 function initGoogleReviews() {
-  // For production, you would use Google Places API
-  // For now, we'll implement a fallback system with your actual reviews
   loadReviewsFromPlaceId();
 }
 
 async function loadReviewsFromPlaceId() {
   try {
-    // In production, this would be a server-side call to Google Places API
-    // For demo purposes, we'll simulate the API response
     const mockReviews = await fetchGoogleReviews();
     
     if (mockReviews && mockReviews.length > 0) {
@@ -1540,53 +1545,23 @@ async function loadReviewsFromPlaceId() {
   }
 }
 
-// Simulate Google Places API response (replace with actual API call)
 async function fetchGoogleReviews() {
-  // This simulates what you'd get from Google Places API
-  // In production, you'd make a server-side request to:
-  // https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=name,rating,reviews&key=${API_KEY}
-  
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([
-        {
-          author_name: "Michael Thompson",
-          rating: 5,
-          text: "Outstanding service from Boshka Lighting! They upgraded our entire electrical panel and installed beautiful lighting throughout our home. Professional, clean, and reasonably priced. Highly recommend!",
-          time: Date.now() - (3 * 7 * 24 * 60 * 60 * 1000), // 3 weeks ago
-          author_url: "https://www.google.com/maps/contrib/102345"
-        },
-        {
-          author_name: "Jennifer Lopez",
-          rating: 5,
-          text: "Called them for an emergency electrical issue and they came out the same day! Fixed the problem quickly and explained everything clearly. Great communication and fair pricing.",
-          time: Date.now() - (4 * 7 * 24 * 60 * 60 * 1000), // 4 weeks ago
-          author_url: "https://www.google.com/maps/contrib/104567"
-        },
-        {
-          author_name: "David Richardson",
-          rating: 5,
-          text: "Boshka Lighting did an amazing job with our kitchen lighting renovation. The team was professional, punctual, and the quality of work exceeded our expectations. Will definitely use them again!",
-          time: Date.now() - (8 * 7 * 24 * 60 * 60 * 1000), // 8 weeks ago
-          author_url: "https://www.google.com/maps/contrib/106789"
-        },
-        {
-          author_name: "Patricia Martinez",
-          rating: 5,
-          text: "Excellent work installing our new outdoor lighting system. The team was knowledgeable about the latest LED technology and helped us save on energy costs. Very satisfied!",
-          time: Date.now() - (12 * 7 * 24 * 60 * 60 * 1000), // 12 weeks ago
-          author_url: "https://www.google.com/maps/contrib/108901"
-        },
-        {
-          author_name: "Robert Kim",
-          rating: 5,
-          text: "I've used Boshka for multiple projects over the years. They're always reliable, professional, and do quality work. Their prices are fair and they stand behind their work. Highly recommend!",
-          time: Date.now() - (16 * 7 * 24 * 60 * 60 * 1000), // 16 weeks ago
-          author_url: "https://www.google.com/maps/contrib/110123"
-        }
-      ]);
-    }, 1000);
-  });
+  const res = await fetch('/get_reviews.php');
+  if (!res.ok) {
+    throw new Error('Unable to fetch Google reviews');
+  }
+  const data = await res.json();
+  if (data.status !== 'OK' || !data.result || !data.result.reviews) {
+    return [];
+  }
+
+  return data.result.reviews.map(r => ({
+    author_name: r.author_name,
+    rating: r.rating,
+    text: r.text,
+    time: (r.time || 0) * 1000, // API returns seconds since epoch
+    author_url: r.author_url
+  }));
 }
 
 function displayReviews() {
@@ -1730,6 +1705,7 @@ function showErrorMessage() {
 document.addEventListener('DOMContentLoaded', initGoogleReviews);
 </script>
 
+<!--
 <section class="showroom-section" style="background: white; padding: 80px 0;">
   <div class="showroom-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
     <div class="showcase-header">
@@ -1741,6 +1717,7 @@ document.addEventListener('DOMContentLoaded', initGoogleReviews);
     </div>
   </div>
 </section>
+-->
 
 <script>
   const carousel = document.getElementById('carousel');
