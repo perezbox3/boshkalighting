@@ -218,6 +218,145 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     outline-offset: 2px;
   }
 
+  /* Holiday popup styles */
+  .holiday-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+  }
+
+  .holiday-popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .holiday-popup {
+    background: linear-gradient(135deg, #434D53 0%, #6b7177 50%, #434D53 100%);
+    padding: 50px 40px;
+    border-radius: 25px;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+    max-width: 550px;
+    margin: 20px;
+    text-align: center;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgba(196, 178, 154, 0.3);
+  }
+
+  .holiday-popup::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="snowflakes" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(196,178,154,0.3)"/><circle cx="5" cy="15" r="0.5" fill="rgba(196,178,154,0.2)"/><circle cx="15" cy="5" r="0.7" fill="rgba(196,178,154,0.25)"/></pattern></defs><rect width="100" height="100" fill="url(%23snowflakes)"/></svg>');
+    animation: snow 20s linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes snow {
+    0% { transform: translateY(-100%) translateX(-100%); }
+    100% { transform: translateY(100%) translateX(100%); }
+  }
+
+  .holiday-popup-overlay.show .holiday-popup {
+    transform: scale(1);
+  }
+
+  .holiday-popup h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+  .holiday-popup h3::before {
+    content: '🎄';
+    margin-right: 10px;
+    font-size: 1.8rem;
+  }
+
+  .holiday-popup h3::after {
+    content: '🎄';
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .holiday-popup p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 25px;
+    line-height: 1.7;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .holiday-popup .closure-dates {
+    background: rgba(196, 178, 154, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border: 1px solid rgba(196, 178, 154, 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  .holiday-popup .closure-dates strong {
+    color: #C4B29A;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+  }
+
+  .holiday-popup-close {
+    background: linear-gradient(135deg, #C4B29A 0%, #D5D7D6 50%, #C4B29A 100%);
+    color: #434D53;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(196, 178, 154, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .holiday-popup-close:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(196, 178, 154, 0.4);
+    background: linear-gradient(135deg, #D5D7D6 0%, #C4B29A 50%, #D5D7D6 100%);
+  }
+
+  .holiday-greeting {
+    margin-top: 15px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+  }
+
+  .holiday-greeting::before {
+    content: '❄️ ';
+  }
+
+  .holiday-greeting::after {
+    content: ' ❄️';
+  }
+
   /* Compact header state (on scroll) */
   header.main-header.compact {
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -494,12 +633,29 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
           <li><a href="<?= $baseUrl; ?>/contact.php" class="<?= $currentPage === 'contact' ? 'active' : '' ?>">Contact</a></li>
           <li><a href="<?= $baseUrl; ?>/gallery.php" class="<?= $currentPage === 'gallery' ? 'active' : '' ?>">Gallery</a></li>
           <li><a href="https://buildherstx.com/" target="_blank" rel="noopener">BuildHERS</a></li>
+          <li><a href="https://dementlighting.com/customerlogin" target="_blank" rel="noopener">Log In</a></li>
         </ul>
       </nav>
     </div>
 
   </div>
 </header>
+
+<!-- Holiday Closure Popup -->
+<div id="holidayPopup" class="holiday-popup-overlay">
+  <div class="holiday-popup">
+    <h3>Holiday Schedule</h3>
+    <p>We will be taking a well-deserved break to spend time with our families during the holidays.</p>
+    <div class="closure-dates">
+      <p>We will be closed:<br>
+      <strong>December 17th-19th</strong><br>
+      and<br>
+      <strong>December 24th - January 1st</strong></p>
+    </div>
+    <p class="holiday-greeting">Wishing you and your family a wonderful holiday season!</p>
+    <button id="closeHolidayPopup" class="holiday-popup-close">Got it!</button>
+  </div>
+</div>
 
 <script>
   (function () {
@@ -615,5 +771,32 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     });
 
   })();
+
+  // Holiday popup functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if popup has been shown before
+    const hasSeenPopup = localStorage.getItem('holidayPopupSeen2024');
+    
+    if (!hasSeenPopup) {
+      // Show popup after a short delay
+      setTimeout(function() {
+        document.getElementById('holidayPopup').classList.add('show');
+      }, 1000);
+    }
+    
+    // Close popup functionality
+    document.getElementById('closeHolidayPopup').addEventListener('click', function() {
+      document.getElementById('holidayPopup').classList.remove('show');
+      localStorage.setItem('holidayPopupSeen2024', 'true');
+    });
+    
+    // Close on overlay click
+    document.getElementById('holidayPopup').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.classList.remove('show');
+        localStorage.setItem('holidayPopupSeen2024', 'true');
+      }
+    });
+  });
 </script>
 
