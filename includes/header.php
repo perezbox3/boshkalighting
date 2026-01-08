@@ -642,6 +642,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
 </header>
 
 <!-- Holiday Closure Popup -->
+<!--
 <div id="holidayPopup" class="holiday-popup-overlay">
   <div class="holiday-popup">
     <h3>Holiday Schedule</h3>
@@ -656,7 +657,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     <button id="closeHolidayPopup" class="holiday-popup-close">Got it!</button>
   </div>
 </div>
-
+          -->
 <script>
   (function () {
     const header = document.getElementById('main-header');
@@ -771,7 +772,7 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
     });
 
   })();
-
+/*
   // Holiday popup functionality
   document.addEventListener('DOMContentLoaded', function() {
     // Check if popup has been shown before
@@ -798,5 +799,6 @@ echo '<meta name="google-site-verification" content="5pOjh8IYXsQBID5PH635pwuYW1a
       }
     });
   });
+*/
 </script>
 
