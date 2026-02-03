@@ -73,6 +73,7 @@
         </div>
       </div>
       <!-- Team Member: Taylor Drew -->
+      <!--
       <div class="team-row">
         <div class="team-img-col">
           <div class="team-img-wrapper">
@@ -85,6 +86,7 @@
           <a href="/taylor-drew.php" class="team-bio-btn">Learn More</a>
         </div>
       </div>
+      -->
       <!-- Team Member: Ashtyn Boshka -->
       <div class="team-row reverse">
         <div class="team-img-col">
