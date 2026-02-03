@@ -87,6 +87,19 @@
         </div>
       </div>
       -->
+      <!-- Team Member: Shahara Fowler -->
+      <div class="team-row">
+        <div class="team-img-col">
+          <div class="team-img-wrapper">
+            <img src="/img.php?src=shahara.jpg&w=600&h=800" alt="Shahara Fowler, MG Brick & Stone Partner" class="team-img" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="team-info-col team-blue">
+          <div class="team-name">Shahara Fowler</div>
+          <div class="team-role">MG Brick & Stone Partner</div>
+          <a href="/shahara-fowler.php" class="team-bio-btn">Learn More</a>
+        </div>
+      </div>
       <!-- Team Member: Ashtyn Boshka -->
       <div class="team-row reverse">
         <div class="team-img-col">
@@ -124,19 +137,6 @@
           <div class="team-name">Avery Wollert</div>
           <div class="team-role">Creative Assistant</div>
           <a href="/avery-wollert.php" class="team-bio-btn">Learn More</a>
-        </div>
-      </div>
-      <!-- Team Member: Shahara Fowler -->
-      <div class="team-row">
-        <div class="team-img-col">
-          <div class="team-img-wrapper">
-            <img src="/img.php?src=shahara.jpg&w=600&h=800" alt="Shahara Fowler, MG Brick & Stone Partner" class="team-img" loading="lazy" decoding="async" />
-          </div>
-        </div>
-        <div class="team-info-col team-blue">
-          <div class="team-name">Shahara Fowler</div>
-          <div class="team-role">MG Brick & Stone Partner</div>
-          <a href="/shahara-fowler.php" class="team-bio-btn">Learn More</a>
         </div>
       </div>
       <style>
